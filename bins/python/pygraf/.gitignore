@@ -1,0 +1,9 @@
+*.pyc
+__pycache__
+.ipynb_checkpoints
+*.grib2
+*.grib
+.DS_STORE
+*.ipynb
+*.log
+*.out

@@ -1,0 +1,52 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Declare Relevant Parameters to Faciliate Measurement Data Extraction
+copy to station_param_list.py
+
+@author: dmurray
+"""
+
+###############################################################################
+
+#Define the Data Ouput Directory
+DIRout_extr = '' # '/Projects/WFIP3/modelobs/Measurement_Data/Stations/'
+###############################################################################
+EXPname = '' # e.g., 'WFIP3'
+EXPstart = '' # yyyymmdd
+#EXPend = ''  # yyyymmdd  (optional - defaults to today)
+###############################################################################
+# Define the Station Name, Description, Location and output directory for measurement data
+# Define the variables for the pslmet files
+# Define the project ID if needed (use LOCname if same) and TROPoe directories
+# Define the parameters to plot.  Remove what you don't need.
+
+# stations - change LOCxxx to 3 letter station id, one set for each station
+LOCname = 'LOC'; LOCdescr = 'Some Location, CO'; LOClat = 41.1667; LOClon = -71.58; LOCalt=35; LOCout = DIRout_extr+LOCname+'out/'; 
+LOCvars = ['pressure','temperature','relative_humidity','wind_speed','vecwind_speed',\
+          'wind_direction','stdwind_direction','battery_voltage','solar_radiation','net_radiation','precipitation','maxwind_speed'];
+LOCprojID = 'BLOC'; LOCassist='ASSIST19'; LOCmwr='MP3297A';
+LOCparams = {
+     'pslmet' : [ 'TEMP', 'PRES', 'LCL', 'MXRAT', 'RH', 'PR', 'WS', 'WD', 'SRAD' ],
+     'rwp' : [ 'WSlow', 'WDlow', 'SNRlow', 'WShgh', 'WDhgh', 'SNRhgh', 'WShub', 'WDhub', 'POW' ], 
+     'dl' : [ 'WS', 'WD', 'WShub', 'WDhub', 'POW' ], 
+}
+# examples from WFIP3
+#
+#BIDname = 'BID'; BIDdescr = 'Block Island, RI'; BIDlat = 41.1667; BIDlon = -71.58; BIDalt=35; BIDout = DIRout_extr+BIDname+'out/'; 
+#BIDvars = ['pressure','temperature','relative_humidity','wind_speed','vecwind_speed',\
+#          'wind_direction','stdwind_direction','battery_voltage','solar_radiation','net_radiation','precipitation','maxwind_speed'];
+#BIDprojID = 'BLOC'; BIDassist='ASSIST19'; BIDmwr='MP3297A';
+#BIDparams = {
+#     'pslmet' : [ 'TEMP', 'PRES', 'LCL', 'MXRAT', 'RH', 'PR', 'WS', 'WD', 'SRAD' ],
+#     'rwp' : [ 'WSlow', 'WDlow', 'SNRlow', 'WShgh', 'WDhgh', 'SNRhgh', 'WShub', 'WDhub', 'POW' ], 
+#     'dl' : [ 'WS', 'WD', 'WShub', 'WDhub', 'POW' ], 
+#}
+#NTEname = 'NTE'; NTEdescr = 'Nantucket, MA'; NTElat = 41.2453; NTElon = -70.105; NTEalt=5; NTEout = DIRout_extr+NTEname+'out/'; 
+#NTEvars = ['pressure','temperature','relative_humidity','battery_voltage','precipitation'];
+#NTEprojID = 'NANT'; NTEassist='ASSIST17'; NTEmwr='MP3058A';
+# NB: NTE doesn't have wspd/wdir or radiation so not included for pslmet.
+#NTEparams = {
+#     'pslmet' : [ 'TEMP', 'PRES', 'LCL', 'MXRAT', 'RH', 'PR' ],
+#     'rwp' : [ 'WSlow', 'WDlow', 'SNRlow', 'WShgh', 'WDhgh', 'SNRhgh', 'WShub', 'WDhub', 'POW' ], 
+#}

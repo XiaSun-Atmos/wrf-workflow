@@ -1,0 +1,13 @@
+"""
+# Defining Relevant Top Level Directories
+###############################################################################
+Created on Wed Feb 14 2024
+@author: dmurray
+"""
+##
+##  Set the paths to the appropriate data/files, then copy to config.py
+##
+CODEdir = ''   #  where the code resides, e.g., '/home/dmurray/scripts/WFIP3/modelobs'
+DATAdir = ''   #  where the data resides, e.g., '/Projects/WFIP3/modelobs'
+MODELdir = ''  # where the model data resides, e.g., '/psd3data/wfipdata/RAP_HRRR_columns'
+TROPoedir = '' # top level TROPoe data directory, e.g.,'/Projects/WFIP3/processed/realtime/TROPoe/'

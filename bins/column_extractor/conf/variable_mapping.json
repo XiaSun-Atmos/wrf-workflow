@@ -1,0 +1,3026 @@
+{
+    "rap": {
+        "pre-process": {
+            "hybrid": [
+                {
+                    "filter_keys": {
+                        "shortName": "pres",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "gh",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "t",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "q",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "clwmr",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "cc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "u",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "v",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "w",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "tke",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                }
+            ],
+            "depthBelowLandLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "st",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "soilw",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                }
+            ],
+            "heightAboveGround": [
+                {
+                    "filter_keys": {
+                        "shortName": "10u",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"],
+                    "rename_to": "u"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "10v",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"],
+                    "rename_to": "v"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "2t",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"],
+                    "rename_to": "t"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "2sh",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"],
+                    "rename_to": "q"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "2d",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"],
+                    "rename_to": "d"
+                }
+            ],
+            "surface" : [
+                {
+                    "filter_keys": {
+                        "shortName": "t",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "sp",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "hpbl",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "vis",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "orog",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "fricv",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "prate",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "tp",
+                        "stepType": "accum",
+                        "stepRange": "(N-1)-N"
+                    },
+                    "file_id": ["wrfnat"],
+                    "rename_to": "paccum"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "csnow",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "vgtyp",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "lhtfl",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "ishf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "gflux",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "dswrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "uswrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "dlwrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "ulwrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "vbdsf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "vddsf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                }
+            ],
+            "atmosphereSingleLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "pwat",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "aot",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                }
+            ],
+            "atmosphere": [
+                {
+                    "filter_keys": {
+                        "shortName": "tcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "refc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "tciw",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "tclw",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                }
+            ],
+            "cloudBase": [
+                {
+                    "filter_keys": {
+                        "shortName": "pcdb",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"],
+                    "rename_to": "pres"
+                }
+            ],
+            "nominalTop": [
+                {
+                    "filter_keys": {
+                        "shortName": "uswrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "ulwrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                }
+            ],
+            "lowCloudLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "lcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                }
+            ],
+            "middleCloudLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "mcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                }
+            ],
+            "highCloudLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "hcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                }
+            ]
+        },
+        "post-process": {
+            "height": [
+                {
+                    "var_name": "pres",
+                    "convert_to": "hPa",
+                    "netcdf_mapping": ["p"]
+                },
+                {
+                    "var_name": "t",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["t"]
+                },
+                {
+                    "var_name": "tv",
+                    "netcdf_mapping": ["tv"]
+                },
+                {
+                    "var_name": "q",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["qv"]
+                },
+                {
+                    "var_name": "r",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["r"]
+                },
+                {
+                    "var_name": "clwmr",
+                    "netcdf_mapping": ["lwc"]
+                },
+                {
+                    "var_name": "cc",
+                    "netcdf_mapping": ["totcc"]
+                },
+                {
+                    "var_name": "u",
+                    "netcdf_mapping": ["u"]
+                },
+                {
+                    "var_name": "v",
+                    "netcdf_mapping": ["v"]
+                },
+                {
+                    "var_name": "w",
+                    "netcdf_mapping": ["w"]
+                },
+                {
+                    "var_name": "wspd",
+                    "netcdf_mapping": ["wspd"]
+                },
+                {
+                    "var_name": "tke",
+                    "netcdf_mapping": ["tke"]
+                }
+            ],
+            "depthBelowLandLayer": [
+                {
+                    "var_name": "st",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["soilt"]
+                },
+                {
+                    "var_name": "soilw",
+                    "netcdf_mapping": ["soilm"]
+                }
+            ],
+            "heightAboveGround": [
+                {
+                    "var_name": "u",
+                    "netcdf_mapping": ["N/A", "usfc"]
+                },
+                {
+                    "var_name": "v",
+                    "netcdf_mapping": ["N/A", "vsfc"]
+                },
+                {
+                    "var_name": "t",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["tsfc", "N/A"]
+                },
+                {
+                    "var_name": "q",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["qvsfc", "N/A"]
+                },
+                {
+                    "var_name": "r",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["rsfc", "N/A"]
+                },
+                {
+                    "var_name": "d",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["dpsfc", "N/A"]
+                }
+            ],
+            "surface" : [
+                {
+                    "var_name": "t",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["stemp"]
+                },
+                {
+                    "var_name": "sp",
+                    "convert_to": "hPa",
+                    "netcdf_mapping": ["psfc"]
+                },
+                {
+                    "var_name": "hpbl",
+                    "netcdf_mapping": ["pbl"]
+                },
+                {
+                    "var_name": "vis",
+                    "netcdf_mapping": ["vis"]
+                },
+                {
+                    "var_name": "orog",
+                    "netcdf_mapping": ["terr"]
+                },
+                {
+                    "var_name": "fricv",
+                    "netcdf_mapping": ["ustar"]
+                },
+                {
+                    "var_name": "prate",
+                    "netcdf_mapping": ["prate"]
+                },
+                {
+                    "var_name": "paccum",
+                    "netcdf_mapping": ["paccum"]
+                },
+                {
+                    "var_name": "csnow",
+                    "netcdf_mapping": ["csnow"]
+                },
+                {
+                    "var_name": "vgtyp",
+                    "netcdf_mapping": ["vegtype"]
+                },
+                {
+                    "var_name": "lhtfl",
+                    "netcdf_mapping": ["lflux"]
+                },
+                {
+                    "var_name": "ishf",
+                    "netcdf_mapping": ["sflux"]
+                },
+                {
+                    "var_name": "gflux",
+                    "netcdf_mapping": ["gflux"]
+                },
+                {
+                    "var_name": "dswrf",
+                    "netcdf_mapping": ["dswsfc"]
+                },
+                {
+                    "var_name": "uswrf",
+                    "netcdf_mapping": ["uswsfc"]
+                },
+                {
+                    "var_name": "dlwrf",
+                    "netcdf_mapping": ["dlwsfc"]
+                },
+                {
+                    "var_name": "ulwrf",
+                    "netcdf_mapping": ["ulwsfc"]
+                },
+                {
+                    "var_name": "vbdsf",
+                    "netcdf_mapping": ["dswdbeam"]
+                },
+                {
+                    "var_name": "vddsf",
+                    "netcdf_mapping": ["dswdiffuse"]
+                }
+            ],
+            "atmosphereSingleLayer": [
+                {
+                    "var_name": "pwat",
+                    "netcdf_mapping": ["pwv"]
+                },
+                {
+                    "var_name": "aot",
+                    "netcdf_mapping": ["aod"]
+                }
+            ],
+            "atmosphere": [
+                {
+                    "var_name": "tcc",
+                    "netcdf_mapping": ["tcc"]
+                },
+                {
+                    "var_name": "refc",
+                    "netcdf_mapping": ["crefl"]
+                },
+                {
+                    "var_name": "tciw",
+                    "convert_to": "g/m^2",
+                    "netcdf_mapping": ["iwp"]
+                },
+                {
+                    "var_name": "tclw",
+                    "convert_to": "g/m^2",
+                    "netcdf_mapping": ["lwp"]
+                }
+            ],
+            "cloudBase": [
+                {
+                    "var_name": "pres",
+                    "convert_to": "hPa",
+                    "netcdf_mapping": ["cbh"]
+                }
+            ],
+            "nominalTop": [
+                {
+                    "var_name": "uswrf",
+                    "netcdf_mapping": ["uswtoa"]
+                },
+                {
+                    "var_name": "ulwrf",
+                    "netcdf_mapping": ["ulwtoa"]
+                }
+            ],
+            "lowCloudLayer": [
+                {
+                    "var_name": "lcc",
+                    "netcdf_mapping": ["lcc"]
+                }
+            ],
+            "middleCloudLayer": [
+                {
+                    "var_name": "mcc",
+                    "netcdf_mapping": ["mcc"]
+                }
+            ],
+            "highCloudLayer": [
+                {
+                    "var_name": "hcc",
+                    "netcdf_mapping": ["hcc"]
+                }
+            ]
+        }
+    },
+    "hrrr": {
+        "pre-process": {
+            "hybrid": [
+                {
+                    "filter_keys": {
+                        "shortName": "pres",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "gh",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "t",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "q",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "clwmr",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "cc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "u",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "v",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "w",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "tke",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                }
+            ],
+            "depthBelowLandLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "st",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfprs"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "soilw",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfprs"]
+                }
+            ],
+            "heightAboveGround": [
+                {
+                    "filter_keys": {
+                        "shortName": "10u",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"],
+                    "rename_to": "u"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "10v",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"],
+                    "rename_to": "v"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "u",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "v",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "2t",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"],
+                    "rename_to": "t"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "2sh",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"],
+                    "rename_to": "q"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "2d",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"],
+                    "rename_to": "d"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "2r",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"],
+                    "rename_to": "rh"
+                }
+            ],
+            "surface" : [
+                {
+                    "filter_keys": {
+                        "shortName": "t",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "sp",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "blh",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "vis",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "orog",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "fricv",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "prate",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "tp",
+                        "stepType": "accum",
+                        "stepRange": "(N-1)-N"
+                    },
+                    "file_id": ["wrfnat"],
+                    "rename_to": "paccum"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "csnow",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "snowc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "vgtyp",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "lhtfl",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "ishf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "gflux",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "dswrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "uswrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "dlwrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "ulwrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "vbdsf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "vddsf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                }
+            ],
+            "atmosphereSingleLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "pwat",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "aot",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                }
+            ],
+            "atmosphere": [
+                {
+                    "filter_keys": {
+                        "shortName": "tcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "refc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                }
+            ],
+            "cloudBase": [
+                {
+                    "filter_keys": {
+                        "shortName": "pcdb",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"],
+                    "rename_to": "pres"
+                }
+            ],
+            "nominalTop": [
+                {
+                    "filter_keys": {
+                        "shortName": "uswrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "ulwrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                }
+            ],
+            "lowCloudLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "lcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                }
+            ],
+            "middleCloudLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "mcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                }
+            ],
+            "highCloudLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "hcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                }
+            ]
+        },
+        "post-process": {
+            "height": [
+                {
+                    "var_name": "pres",
+                    "convert_to": "hPa",
+                    "netcdf_mapping": ["p"]
+                },
+                {
+                    "var_name": "t",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["t"]
+                },
+                {
+                    "var_name": "tv",
+                    "netcdf_mapping": ["tv"]
+                },
+                {
+                    "var_name": "q",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["qv"]
+                },
+                {
+                    "var_name": "r",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["r"]
+                },
+                {
+                    "var_name": "clwmr",
+                    "netcdf_mapping": ["lwc"]
+                },
+                {
+                    "var_name": "cc",
+                    "netcdf_mapping": ["totcc"]
+                },
+                {
+                    "var_name": "u",
+                    "netcdf_mapping": ["u"]
+                },
+                {
+                    "var_name": "v",
+                    "netcdf_mapping": ["v"]
+                },
+                {
+                    "var_name": "w",
+                    "netcdf_mapping": ["w"]
+                },
+                {
+                    "var_name": "wspd",
+                    "netcdf_mapping": ["wspd"]
+                },
+                {
+                    "var_name": "tke",
+                    "netcdf_mapping": ["tke"]
+                }
+            ],
+            "depthBelowLandLayer": [
+                {
+                    "var_name": "st",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["soilt"]
+                },
+                {
+                    "var_name": "soilw",
+                    "netcdf_mapping": ["soilm"]
+                }
+            ],
+            "heightAboveGround": [
+                {
+                    "var_name": "u",
+                    "netcdf_mapping": ["N/A", "usfc", "u80m"]
+                },
+                {
+                    "var_name": "v",
+                    "netcdf_mapping": ["N/A", "vsfc", "v80m"]
+                },
+                {
+                    "var_name": "t",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["tsfc", "N/A", "N/A"]
+                },
+                {
+                    "var_name": "q",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["qvsfc", "N/A", "N/A"]
+                },
+                {
+                    "var_name": "r",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["rsfc", "N/A", "N/A"]
+                },
+                {
+                    "var_name": "d",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["dpsfc", "N/A", "N/A"]
+                },
+                {
+                    "var_name": "rh",
+                    "netcdf_mapping": ["rhsfc", "N/A", "N/A"]
+                }
+            ],
+            "surface" : [
+                {
+                    "var_name": "t",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["stemp"]
+                },
+                {
+                    "var_name": "sp",
+                    "convert_to": "hPa",
+                    "netcdf_mapping": ["psfc"]
+                },
+                {
+                    "var_name": "blh",
+                    "netcdf_mapping": ["pbl"]
+                },
+                {
+                    "var_name": "vis",
+                    "netcdf_mapping": ["vis"]
+                },
+                {
+                    "var_name": "orog",
+                    "netcdf_mapping": ["terr"]
+                },
+                {
+                    "var_name": "fricv",
+                    "netcdf_mapping": ["ustar"]
+                },
+                {
+                    "var_name": "prate",
+                    "netcdf_mapping": ["prate"]
+                },
+                {
+                    "var_name": "paccum",
+                    "netcdf_mapping": ["paccum"]
+                },
+                {
+                    "var_name": "csnow",
+                    "netcdf_mapping": ["csnow"]
+                },
+                {
+                    "var_name": "snowc",
+                    "netcdf_mapping": ["snowfrac"]
+                },
+                {
+                    "var_name": "vgtyp",
+                    "netcdf_mapping": ["vegtype"]
+                },
+                {
+                    "var_name": "lhtfl",
+                    "netcdf_mapping": ["lflux"]
+                },
+                {
+                    "var_name": "ishf",
+                    "netcdf_mapping": ["sflux"]
+                },
+                {
+                    "var_name": "gflux",
+                    "netcdf_mapping": ["gflux"]
+                },
+                {
+                    "var_name": "dswrf",
+                    "netcdf_mapping": ["dswsfc"]
+                },
+                {
+                    "var_name": "uswrf",
+                    "netcdf_mapping": ["uswsfc"]
+                },
+                {
+                    "var_name": "dlwrf",
+                    "netcdf_mapping": ["dlwsfc"]
+                },
+                {
+                    "var_name": "ulwrf",
+                    "netcdf_mapping": ["ulwsfc"]
+                },
+                {
+                    "var_name": "vbdsf",
+                    "netcdf_mapping": ["dswdbeam"]
+                },
+                {
+                    "var_name": "vddsf",
+                    "netcdf_mapping": ["dswdiffuse"]
+                }
+            ],
+            "atmosphereSingleLayer": [
+                {
+                    "var_name": "pwat",
+                    "netcdf_mapping": ["pwv"]
+                },
+                {
+                    "var_name": "aot",
+                    "netcdf_mapping": ["aod"]
+                }
+            ],
+            "atmosphere": [
+                {
+                    "var_name": "tcc",
+                    "netcdf_mapping": ["tcc"]
+                },
+                {
+                    "var_name": "refc",
+                    "netcdf_mapping": ["crefl"]
+                }
+            ],
+            "cloudBase": [
+                {
+                    "var_name": "pres",
+                    "convert_to": "hPa",
+                    "netcdf_mapping": ["cbh"]
+                }
+            ],
+            "nominalTop": [
+                {
+                    "var_name": "uswrf",
+                    "netcdf_mapping": ["uswtoa"]
+                },
+                {
+                    "var_name": "ulwrf",
+                    "netcdf_mapping": ["ulwtoa"]
+                }
+            ],
+            "lowCloudLayer": [
+                {
+                    "var_name": "lcc",
+                    "netcdf_mapping": ["lcc"]
+                }
+            ],
+            "middleCloudLayer": [
+                {
+                    "var_name": "mcc",
+                    "netcdf_mapping": ["mcc"]
+                }
+            ],
+            "highCloudLayer": [
+                {
+                    "var_name": "hcc",
+                    "netcdf_mapping": ["hcc"]
+                }
+            ]
+        }
+    },
+    "gfs": {
+        "pre-process": {
+            "isobaricInhPa": [
+                {
+                    "filter_keys": {
+                        "shortName": "gh",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2.", ".pgrb2b."],
+                    "drop_levels": [40.0,30.0,20.0,15.0,10.0,
+                                    7.0,5.0,3.0,2.0,1.0]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "t",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2.", ".pgrb2b."],
+                    "drop_levels": [40.0,30.0,20.0,15.0,10.0,
+                                    7.0,5.0,3.0,2.0,1.0]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "q",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."],
+                    "drop_levels": [40.0,30.0,20.0,15.0,10.0,
+                                    7.0,5.0,3.0,2.0,1.0]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "clwmr",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2.", ".pgrb2b."]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "tcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2.", ".pgrb2b."]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "u",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2.", ".pgrb2b."],
+                    "drop_levels": [40.0,30.0,20.0,15.0,10.0,
+                                    7.0,5.0,3.0,2.0,1.0]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "v",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2.", ".pgrb2b."],
+                    "drop_levels": [40.0,30.0,20.0,15.0,10.0,
+                                    7.0,5.0,3.0,2.0,1.0]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "w",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2.", ".pgrb2b."],
+                    "drop_levels": [40.0,30.0,20.0,15.0,10.0,
+                                    7.0,5.0,3.0,2.0,1.0]
+                }
+            ],
+            "depthBelowLandLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "st",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "soilw",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."]
+                }
+            ],
+            "heightAboveGround": [
+                {
+                    "filter_keys": {
+                        "shortName": "10u",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."],
+                    "rename_to": "u"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "10v",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."],
+                    "rename_to": "v"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "u",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."],
+                    "keep_levels": [80.0]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "v",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."],
+                    "keep_levels": [80.0]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "2t",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."],
+                    "rename_to": "t"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "2sh",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."],
+                    "rename_to": "q"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "2d",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."],
+                    "rename_to": "d"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "2r",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."],
+                    "rename_to": "rh"
+                }
+            ],
+            "surface" : [
+                {
+                    "filter_keys": {
+                        "shortName": "t",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "sp",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "hpbl",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "vis",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "orog",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "fricv",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "prate",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "csnow",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "mslhf",
+                        "stepType": "avg"
+                    },
+                    "file_id": [".pgrb2."]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "msshf",
+                        "stepType": "avg"
+                    },
+                    "file_id": [".pgrb2."]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "gflux",
+                        "stepType": "avg"
+                    },
+                    "file_id": [".pgrb2."]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "dswrf",
+                        "stepType": "avg"
+                    },
+                    "file_id": [".pgrb2."]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "uswrf",
+                        "stepType": "avg"
+                    },
+                    "file_id": [".pgrb2."]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "dlwrf",
+                        "stepType": "avg"
+                    },
+                    "file_id": [".pgrb2."]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "ulwrf",
+                        "stepType": "avg"
+                    },
+                    "file_id": [".pgrb2."]
+                }
+            ],
+            "atmosphereSingleLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "pwat",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."]
+                }
+            ],
+            "atmosphere": [
+                {
+                    "filter_keys": {
+                        "shortName": "tcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "refc",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."]
+                }
+            ],
+            "nominalTop": [
+                {
+                    "filter_keys": {
+                        "shortName": "uswrf",
+                        "stepType": "avg"
+                    },
+                    "file_id": [".pgrb2."]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "ulwrf",
+                        "stepType": "avg"
+                    },
+                    "file_id": [".pgrb2."]
+                }
+            ],
+            "lowCloudLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "lcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."]
+                }
+            ],
+            "middleCloudLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "mcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."]
+                }
+            ],
+            "highCloudLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "hcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": [".pgrb2."]
+                }
+            ]
+        },
+        "post-process": {
+            "height": [
+                {
+                    "var_name": "pres",
+                    "convert_to": "hPa",
+                    "netcdf_mapping": ["p"]
+                },
+                {
+                    "var_name": "t",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["t"]
+                },
+                {
+                    "var_name": "tv",
+                    "netcdf_mapping": ["tv"]
+                },
+                {
+                    "var_name": "q",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["qv"]
+                },
+                {
+                    "var_name": "r",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["r"]
+                },
+                {
+                    "var_name": "clwmr",
+                    "netcdf_mapping": ["lwc"]
+                },
+                {
+                    "var_name": "tcc",
+                    "convert_to": "base units",
+                    "netcdf_mapping": ["totcc"]
+                },
+                {
+                    "var_name": "u",
+                    "netcdf_mapping": ["u"]
+                },
+                {
+                    "var_name": "v",
+                    "netcdf_mapping": ["v"]
+                },
+                {
+                    "var_name": "w",
+                    "netcdf_mapping": ["w"]
+                },
+                {
+                    "var_name": "wspd",
+                    "netcdf_mapping": ["wspd"]
+                }
+            ],
+            "depthBelowLandLayer": [
+                {
+                    "var_name": "st",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["soilt"]
+                },
+                {
+                    "var_name": "soilw",
+                    "netcdf_mapping": ["soilm"]
+                }
+            ],
+            "heightAboveGround": [
+                {
+                    "var_name": "u",
+                    "netcdf_mapping": ["N/A", "usfc", "u80m"]
+                },
+                {
+                    "var_name": "v",
+                    "netcdf_mapping": ["N/A", "vsfc", "v80m"]
+                },
+                {
+                    "var_name": "t",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["tsfc", "N/A", "N/A"]
+                },
+                {
+                    "var_name": "q",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["qvsfc", "N/A", "N/A"]
+                },
+                {
+                    "var_name": "r",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["rsfc", "N/A", "N/A"]
+                },
+                {
+                    "var_name": "d",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["dpsfc", "N/A", "N/A"]
+                },
+                {
+                    "var_name": "rh",
+                    "netcdf_mapping": ["rhsfc", "N/A", "N/A"]
+                }
+            ],
+            "surface" : [
+                {
+                    "var_name": "t",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["stemp"]
+                },
+                {
+                    "var_name": "sp",
+                    "convert_to": "hPa",
+                    "netcdf_mapping": ["psfc"]
+                },
+                {
+                    "var_name": "hpbl",
+                    "netcdf_mapping": ["pbl"]
+                },
+                {
+                    "var_name": "vis",
+                    "netcdf_mapping": ["vis"]
+                },
+                {
+                    "var_name": "orog",
+                    "netcdf_mapping": ["terr"]
+                },
+                {
+                    "var_name": "fricv",
+                    "netcdf_mapping": ["ustar"]
+                },
+                {
+                    "var_name": "prate",
+                    "netcdf_mapping": ["prate"]
+                },
+                {
+                    "var_name": "csnow",
+                    "netcdf_mapping": ["csnow"]
+                },
+                {
+                    "var_name": "mslhf",
+                    "netcdf_mapping": ["lflux"]
+                },
+                {
+                    "var_name": "msshf",
+                    "netcdf_mapping": ["sflux"]
+                },
+                {
+                    "var_name": "gflux",
+                    "netcdf_mapping": ["gflux"]
+                },
+                {
+                    "var_name": "dswrf",
+                    "netcdf_mapping": ["dswsfc"]
+                },
+                {
+                    "var_name": "uswrf",
+                    "netcdf_mapping": ["uswsfc"]
+                },
+                {
+                    "var_name": "dlwrf",
+                    "netcdf_mapping": ["dlwsfc"]
+                },
+                {
+                    "var_name": "ulwrf",
+                    "netcdf_mapping": ["ulwsfc"]
+                }
+            ],
+            "atmosphereSingleLayer": [
+                {
+                    "var_name": "pwat",
+                    "netcdf_mapping": ["pwv"]
+                }
+            ],
+            "atmosphere": [
+                {
+                    "var_name": "tcc",
+                    "netcdf_mapping": ["tcc"]
+                },
+                {
+                    "var_name": "refc",
+                    "netcdf_mapping": ["crefl"]
+                }
+            ],
+            "nominalTop": [
+                {
+                    "var_name": "uswrf",
+                    "netcdf_mapping": ["uswtoa"]
+                },
+                {
+                    "var_name": "ulwrf",
+                    "netcdf_mapping": ["ulwtoa"]
+                }
+            ],
+            "lowCloudLayer": [
+                {
+                    "var_name": "lcc",
+                    "netcdf_mapping": ["lcc"]
+                }
+            ],
+            "middleCloudLayer": [
+                {
+                    "var_name": "mcc",
+                    "netcdf_mapping": ["mcc"]
+                }
+            ],
+            "highCloudLayer": [
+                {
+                    "var_name": "hcc",
+                    "netcdf_mapping": ["hcc"]
+                }
+            ]
+        }
+    },
+    "wfip3km": {
+        "pre-process": {
+            "hybrid": [
+                {
+                    "filter_keys": {
+                        "shortName": "pres",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "gh",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "t",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "q",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "clwmr",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "cc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "u",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "v",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "w",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "tke",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                }
+            ],
+            "depthBelowLandLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "st",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfprs"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "soilw",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfprs"]
+                }
+            ],
+            "heightAboveGround": [
+                {
+                    "filter_keys": {
+                        "shortName": "10u",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"],
+                    "rename_to": "u"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "10v",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"],
+                    "rename_to": "v"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "u",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "v",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "2t",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"],
+                    "rename_to": "t"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "2sh",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"],
+                    "rename_to": "q"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "2d",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"],
+                    "rename_to": "d"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "2r",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"],
+                    "rename_to": "rh"
+                }
+            ],
+            "surface" : [
+                {
+                    "filter_keys": {
+                        "shortName": "t",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "sp",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "blh",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "vis",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "orog",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "fricv",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "prate",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "tp",
+                        "stepType": "accum",
+                        "stepRange": "(N-1)-N"
+                    },
+                    "file_id": ["wrftwo"],
+                    "rename_to": "paccum"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "csnow",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "snowc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "vgtyp",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "lhtfl",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "ishf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "gflux",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "dswrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "uswrf",
+                        "stepType": "two"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "dlwrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "ulwrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "vbdsf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "vddsf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                }
+            ],
+            "atmosphereSingleLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "pwat",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "aot",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                }
+            ],
+            "atmosphere": [
+                {
+                    "filter_keys": {
+                        "shortName": "tcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "refc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                }
+            ],
+            "cloudBase": [
+                {
+                    "filter_keys": {
+                        "shortName": "pcdb",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"],
+                    "rename_to": "pres"
+                }
+            ],
+            "nominalTop": [
+                {
+                    "filter_keys": {
+                        "shortName": "uswrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "ulwrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                }
+            ],
+            "lowCloudLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "lcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                }
+            ],
+            "middleCloudLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "mcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                }
+            ],
+            "highCloudLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "hcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                }
+            ]
+        },
+        "post-process": {
+            "height": [
+                {
+                    "var_name": "pres",
+                    "convert_to": "hPa",
+                    "netcdf_mapping": ["p"]
+                },
+                {
+                    "var_name": "t",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["t"]
+                },
+                {
+                    "var_name": "tv",
+                    "netcdf_mapping": ["tv"]
+                },
+                {
+                    "var_name": "q",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["qv"]
+                },
+                {
+                    "var_name": "r",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["r"]
+                },
+                {
+                    "var_name": "clwmr",
+                    "netcdf_mapping": ["lwc"]
+                },
+                {
+                    "var_name": "cc",
+                    "netcdf_mapping": ["totcc"]
+                },
+                {
+                    "var_name": "u",
+                    "netcdf_mapping": ["u"]
+                },
+                {
+                    "var_name": "v",
+                    "netcdf_mapping": ["v"]
+                },
+                {
+                    "var_name": "w",
+                    "netcdf_mapping": ["w"]
+                },
+                {
+                    "var_name": "wspd",
+                    "netcdf_mapping": ["wspd"]
+                },
+                {
+                    "var_name": "tke",
+                    "netcdf_mapping": ["tke"]
+                }
+            ],
+            "depthBelowLandLayer": [
+                {
+                    "var_name": "st",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["soilt"]
+                },
+                {
+                    "var_name": "soilw",
+                    "netcdf_mapping": ["soilm"]
+                }
+            ],
+            "heightAboveGround": [
+                {
+                    "var_name": "u",
+                    "netcdf_mapping": ["N/A", "usfc", "u80m"]
+                },
+                {
+                    "var_name": "v",
+                    "netcdf_mapping": ["N/A", "vsfc", "v80m"]
+                },
+                {
+                    "var_name": "t",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["tsfc", "N/A", "N/A"]
+                },
+                {
+                    "var_name": "q",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["qvsfc", "N/A", "N/A"]
+                },
+                {
+                    "var_name": "r",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["rsfc", "N/A", "N/A"]
+                },
+                {
+                    "var_name": "d",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["dpsfc", "N/A", "N/A"]
+                },
+                {
+                    "var_name": "rh",
+                    "netcdf_mapping": ["rhsfc", "N/A", "N/A"]
+                }
+            ],
+            "surface" : [
+                {
+                    "var_name": "t",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["stemp"]
+                },
+                {
+                    "var_name": "sp",
+                    "convert_to": "hPa",
+                    "netcdf_mapping": ["psfc"]
+                },
+                {
+                    "var_name": "blh",
+                    "netcdf_mapping": ["pbl"]
+                },
+                {
+                    "var_name": "vis",
+                    "netcdf_mapping": ["vis"]
+                },
+                {
+                    "var_name": "orog",
+                    "netcdf_mapping": ["terr"]
+                },
+                {
+                    "var_name": "fricv",
+                    "netcdf_mapping": ["ustar"]
+                },
+                {
+                    "var_name": "prate",
+                    "netcdf_mapping": ["prate"]
+                },
+                {
+                    "var_name": "paccum",
+                    "netcdf_mapping": ["paccum"]
+                },
+                {
+                    "var_name": "csnow",
+                    "netcdf_mapping": ["csnow"]
+                },
+                {
+                    "var_name": "snowc",
+                    "netcdf_mapping": ["snowfrac"]
+                },
+                {
+                    "var_name": "vgtyp",
+                    "netcdf_mapping": ["vegtype"]
+                },
+                {
+                    "var_name": "lhtfl",
+                    "netcdf_mapping": ["lflux"]
+                },
+                {
+                    "var_name": "ishf",
+                    "netcdf_mapping": ["sflux"]
+                },
+                {
+                    "var_name": "gflux",
+                    "netcdf_mapping": ["gflux"]
+                },
+                {
+                    "var_name": "dswrf",
+                    "netcdf_mapping": ["dswsfc"]
+                },
+                {
+                    "var_name": "uswrf",
+                    "netcdf_mapping": ["uswsfc"]
+                },
+                {
+                    "var_name": "dlwrf",
+                    "netcdf_mapping": ["dlwsfc"]
+                },
+                {
+                    "var_name": "ulwrf",
+                    "netcdf_mapping": ["ulwsfc"]
+                },
+                {
+                    "var_name": "vbdsf",
+                    "netcdf_mapping": ["dswdbeam"]
+                },
+                {
+                    "var_name": "vddsf",
+                    "netcdf_mapping": ["dswdiffuse"]
+                }
+            ],
+            "atmosphereSingleLayer": [
+                {
+                    "var_name": "pwat",
+                    "netcdf_mapping": ["pwv"]
+                },
+                {
+                    "var_name": "aot",
+                    "netcdf_mapping": ["aod"]
+                }
+            ],
+            "atmosphere": [
+                {
+                    "var_name": "tcc",
+                    "netcdf_mapping": ["tcc"]
+                },
+                {
+                    "var_name": "refc",
+                    "netcdf_mapping": ["crefl"]
+                }
+            ],
+            "cloudBase": [
+                {
+                    "var_name": "pres",
+                    "convert_to": "hPa",
+                    "netcdf_mapping": ["cbh"]
+                }
+            ],
+            "nominalTop": [
+                {
+                    "var_name": "uswrf",
+                    "netcdf_mapping": ["uswtoa"]
+                },
+                {
+                    "var_name": "ulwrf",
+                    "netcdf_mapping": ["ulwtoa"]
+                }
+            ],
+            "lowCloudLayer": [
+                {
+                    "var_name": "lcc",
+                    "netcdf_mapping": ["lcc"]
+                }
+            ],
+            "middleCloudLayer": [
+                {
+                    "var_name": "mcc",
+                    "netcdf_mapping": ["mcc"]
+                }
+            ],
+            "highCloudLayer": [
+                {
+                    "var_name": "hcc",
+                    "netcdf_mapping": ["hcc"]
+                }
+            ]
+        }
+    },
+    "wfip1km": {
+        "pre-process": {
+            "hybrid": [
+                {
+                    "filter_keys": {
+                        "shortName": "pres",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "gh",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "t",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "q",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "clwmr",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "cc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "u",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "v",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "w",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "tke",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfnat"]
+                }
+            ],
+            "depthBelowLandLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "st",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfprs"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "soilw",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrfprs"]
+                }
+            ],
+            "heightAboveGround": [
+                {
+                    "filter_keys": {
+                        "shortName": "10u",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"],
+                    "rename_to": "u"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "10v",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"],
+                    "rename_to": "v"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "u",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "v",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "2t",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"],
+                    "rename_to": "t"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "2sh",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"],
+                    "rename_to": "q"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "2d",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"],
+                    "rename_to": "d"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "2r",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"],
+                    "rename_to": "rh"
+                }
+            ],
+            "surface" : [
+                {
+                    "filter_keys": {
+                        "shortName": "t",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "sp",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "blh",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "vis",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "orog",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "fricv",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "prate",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "tp",
+                        "stepType": "accum",
+                        "stepRange": "(N-1)-N"
+                    },
+                    "file_id": ["wrftwo"],
+                    "rename_to": "paccum"
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "csnow",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "snowc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "vgtyp",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "lhtfl",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "ishf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "gflux",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "dswrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "uswrf",
+                        "stepType": "two"
+                    },
+                    "file_id": ["wrfnat"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "dlwrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "ulwrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "vbdsf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "vddsf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                }
+            ],
+            "atmosphereSingleLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "pwat",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "aot",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                }
+            ],
+            "atmosphere": [
+                {
+                    "filter_keys": {
+                        "shortName": "tcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "refc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                }
+            ],
+            "cloudBase": [
+                {
+                    "filter_keys": {
+                        "shortName": "pcdb",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"],
+                    "rename_to": "pres"
+                }
+            ],
+            "nominalTop": [
+                {
+                    "filter_keys": {
+                        "shortName": "uswrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                },
+                {
+                    "filter_keys": {
+                        "shortName": "ulwrf",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                }
+            ],
+            "lowCloudLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "lcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                }
+            ],
+            "middleCloudLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "mcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                }
+            ],
+            "highCloudLayer": [
+                {
+                    "filter_keys": {
+                        "shortName": "hcc",
+                        "stepType": "instant"
+                    },
+                    "file_id": ["wrftwo"]
+                }
+            ]
+        },
+        "post-process": {
+            "height": [
+                {
+                    "var_name": "pres",
+                    "convert_to": "hPa",
+                    "netcdf_mapping": ["p"]
+                },
+                {
+                    "var_name": "t",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["t"]
+                },
+                {
+                    "var_name": "tv",
+                    "netcdf_mapping": ["tv"]
+                },
+                {
+                    "var_name": "q",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["qv"]
+                },
+                {
+                    "var_name": "r",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["r"]
+                },
+                {
+                    "var_name": "clwmr",
+                    "netcdf_mapping": ["lwc"]
+                },
+                {
+                    "var_name": "cc",
+                    "netcdf_mapping": ["totcc"]
+                },
+                {
+                    "var_name": "u",
+                    "netcdf_mapping": ["u"]
+                },
+                {
+                    "var_name": "v",
+                    "netcdf_mapping": ["v"]
+                },
+                {
+                    "var_name": "w",
+                    "netcdf_mapping": ["w"]
+                },
+                {
+                    "var_name": "wspd",
+                    "netcdf_mapping": ["wspd"]
+                },
+                {
+                    "var_name": "tke",
+                    "netcdf_mapping": ["tke"]
+                }
+            ],
+            "depthBelowLandLayer": [
+                {
+                    "var_name": "st",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["soilt"]
+                },
+                {
+                    "var_name": "soilw",
+                    "netcdf_mapping": ["soilm"]
+                }
+            ],
+            "heightAboveGround": [
+                {
+                    "var_name": "u",
+                    "netcdf_mapping": ["N/A", "usfc", "u80m"]
+                },
+                {
+                    "var_name": "v",
+                    "netcdf_mapping": ["N/A", "vsfc", "v80m"]
+                },
+                {
+                    "var_name": "t",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["tsfc", "N/A", "N/A"]
+                },
+                {
+                    "var_name": "q",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["qvsfc", "N/A", "N/A"]
+                },
+                {
+                    "var_name": "r",
+                    "convert_to": "g/kg",
+                    "netcdf_mapping": ["rsfc", "N/A", "N/A"]
+                },
+                {
+                    "var_name": "d",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["dpsfc", "N/A", "N/A"]
+                },
+                {
+                    "var_name": "rh",
+                    "netcdf_mapping": ["rhsfc", "N/A", "N/A"]
+                }
+            ],
+            "surface" : [
+                {
+                    "var_name": "t",
+                    "convert_to": "degC",
+                    "netcdf_mapping": ["stemp"]
+                },
+                {
+                    "var_name": "sp",
+                    "convert_to": "hPa",
+                    "netcdf_mapping": ["psfc"]
+                },
+                {
+                    "var_name": "blh",
+                    "netcdf_mapping": ["pbl"]
+                },
+                {
+                    "var_name": "vis",
+                    "netcdf_mapping": ["vis"]
+                },
+                {
+                    "var_name": "orog",
+                    "netcdf_mapping": ["terr"]
+                },
+                {
+                    "var_name": "fricv",
+                    "netcdf_mapping": ["ustar"]
+                },
+                {
+                    "var_name": "prate",
+                    "netcdf_mapping": ["prate"]
+                },
+                {
+                    "var_name": "paccum",
+                    "netcdf_mapping": ["paccum"]
+                },
+                {
+                    "var_name": "csnow",
+                    "netcdf_mapping": ["csnow"]
+                },
+                {
+                    "var_name": "snowc",
+                    "netcdf_mapping": ["snowfrac"]
+                },
+                {
+                    "var_name": "vgtyp",
+                    "netcdf_mapping": ["vegtype"]
+                },
+                {
+                    "var_name": "lhtfl",
+                    "netcdf_mapping": ["lflux"]
+                },
+                {
+                    "var_name": "ishf",
+                    "netcdf_mapping": ["sflux"]
+                },
+                {
+                    "var_name": "gflux",
+                    "netcdf_mapping": ["gflux"]
+                },
+                {
+                    "var_name": "dswrf",
+                    "netcdf_mapping": ["dswsfc"]
+                },
+                {
+                    "var_name": "uswrf",
+                    "netcdf_mapping": ["uswsfc"]
+                },
+                {
+                    "var_name": "dlwrf",
+                    "netcdf_mapping": ["dlwsfc"]
+                },
+                {
+                    "var_name": "ulwrf",
+                    "netcdf_mapping": ["ulwsfc"]
+                },
+                {
+                    "var_name": "vbdsf",
+                    "netcdf_mapping": ["dswdbeam"]
+                },
+                {
+                    "var_name": "vddsf",
+                    "netcdf_mapping": ["dswdiffuse"]
+                }
+            ],
+            "atmosphereSingleLayer": [
+                {
+                    "var_name": "pwat",
+                    "netcdf_mapping": ["pwv"]
+                },
+                {
+                    "var_name": "aot",
+                    "netcdf_mapping": ["aod"]
+                }
+            ],
+            "atmosphere": [
+                {
+                    "var_name": "tcc",
+                    "netcdf_mapping": ["tcc"]
+                },
+                {
+                    "var_name": "refc",
+                    "netcdf_mapping": ["crefl"]
+                }
+            ],
+            "cloudBase": [
+                {
+                    "var_name": "pres",
+                    "convert_to": "hPa",
+                    "netcdf_mapping": ["cbh"]
+                }
+            ],
+            "nominalTop": [
+                {
+                    "var_name": "uswrf",
+                    "netcdf_mapping": ["uswtoa"]
+                },
+                {
+                    "var_name": "ulwrf",
+                    "netcdf_mapping": ["ulwtoa"]
+                }
+            ],
+            "lowCloudLayer": [
+                {
+                    "var_name": "lcc",
+                    "netcdf_mapping": ["lcc"]
+                }
+            ],
+            "middleCloudLayer": [
+                {
+                    "var_name": "mcc",
+                    "netcdf_mapping": ["mcc"]
+                }
+            ],
+            "highCloudLayer": [
+                {
+                    "var_name": "hcc",
+                    "netcdf_mapping": ["hcc"]
+                }
+            ]
+        }
+    }
+}

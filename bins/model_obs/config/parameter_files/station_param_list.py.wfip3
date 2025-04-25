@@ -1,0 +1,49 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Declare Relevant Parameters to Faciliate Measurement Data Extraction
+copy to station_param_list.py
+
+@author: dmurray
+"""
+
+###############################################################################
+
+#Define the Data Ouput Directory
+DIRout_extr = '/Projects/WFIP3/modelobs/Measurement_Data/Stations/'
+###############################################################################
+EXPname = 'WFIP3'
+EXPstart = '20231109'
+#EXPend = 
+###############################################################################
+# Define the Station Name, Description, Location and output directory for measurement data
+# Define the variables for the pslmet files
+# Define the project ID if needed (use LOCname if same) and TROPoe directories
+
+# WFIP3 stations
+BIDname = 'BID'; BIDdescr = 'Block Island, RI'; BIDlat = 41.1667; BIDlon = -71.58; BIDalt=35; BIDout = DIRout_extr+BIDname+'out/'; 
+BIDvars = ['pressure','temperature','relative_humidity','wind_speed','vecwind_speed',\
+          'wind_direction','stdwind_direction','battery_voltage','solar_radiation','net_radiation','precipitation','maxwind_speed'];
+BIDprojID = 'BLOC'; BIDassist='ASSIST19'; BIDmwr='MP3297A'; BIDhubhgt=179
+BIDaltSite = [41.1367, -71.58196]; BIDmdlID = 'land'; BIDaltmdlID = 'water'; BIDaltmdls = ['HRRR_v4'];
+BIDparams = {
+     'pslmet' : [ 'TEMP', 'PRES', 'LCL', 'MXRAT', 'RH', 'PR', 'WS', 'WD', 'SRAD' ],
+     'rwp' : [ 'WSlow', 'WDlow', 'SNRlow', 'WShgh', 'WDhgh', 'SNRhgh', 'WShub', 'WDhub', 'POW' ], 
+     'dl' : [ 'WS', 'WD', 'WShub', 'WDhub', 'POW' ], 
+}
+NTEname = 'NTE'; NTEdescr = 'Nantucket, MA'; NTElat = 41.2453; NTElon = -70.105; NTEalt=5; NTEout = DIRout_extr+NTEname+'out/'; 
+NTEvars = ['pressure','temperature','relative_humidity','battery_voltage','precipitation'];
+NTEprojID = 'NANT'; NTEassist='ASSIST17'; NTEmwr='MP3058A'; NTEhubhgt=180
+NTEaltSite = [41.22672, -70.12465]; NTEmdlID = 'land'; NTEaltmdlID = 'water'; NTEaltmdls = ['HRRR_v4'];
+NTEparams = {
+     'pslmet' : [ 'TEMP', 'PRES', 'LCL', 'MXRAT', 'RH', 'PR' ],
+     'rwp' : [ 'WSlow', 'WDlow', 'SNRlow', 'WShgh', 'WDhgh', 'SNRhgh', 'WShub', 'WDhub', 'POW' ], 
+}
+
+MVYname = 'MVY'; MVYdescr = 'Martha\'s Vineyard, MA'; MVYlat = 41.361977; MVYlon = -70.522499; MVYalt=6; MVYout = DIRout_extr+MVYname+'out/'; 
+#MVYvars = ['pressure','temperature','relative_humidity','battery_voltage','precipitation'];
+MVYprojID = 'MVCO'; MVYhubhgt=180
+MVYparams = {
+     'dl' : [ 'WS', 'WD', 'WShub', 'WDhub', 'POW' ], 
+}
+

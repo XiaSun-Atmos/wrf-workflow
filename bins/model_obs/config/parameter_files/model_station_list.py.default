@@ -1,0 +1,12 @@
+"""
+Declare Relevant station locations to Faciliate PSL Model Data Extraction 
+@author: dmurray
+"""
+# HRRR nearest grid point
+LOC_HRRR_v4_lat = 41.1667; LOC_HRRR_v4_lon = -71.58; LOC_HRRR_v4_alt=35;
+# example from WFIP3
+#BID_HRRR_v4_lat = 41.1667; BID_HRRR_v4_lon = -71.58; BID_HRRR_v4_alt=35;
+# RAP nearest grid point
+BID_RAP_v5_lat = 41.1667; BID_RAP_v5_lon = -71.58; BID_RAP_v5_alt=35;
+# example from WFIP3
+#BID_RAP_v5_lat = 41.1667; BID_RAP_v5_lon = -71.58; BID_RAP_v5_alt=35;

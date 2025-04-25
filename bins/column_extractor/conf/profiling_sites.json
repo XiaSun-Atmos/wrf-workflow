@@ -1,0 +1,1123 @@
+{
+    "rap": {
+        "ARM sgpC1 site (Lamont, OK)": [
+            36.6053,
+            -97.4857
+        ],
+        "ARM sgpE32 site (Medford, OK)": [
+            36.8167,
+            -97.82
+        ],
+        "ARM sgpE37 site (Waukomis, OK)": [
+            36.3106,
+            -97.9281
+        ],
+        "ARM sgpE39 site (Morrison, OK)": [
+            36.3736,
+            -97.0692
+        ],
+        "ARM sgpE41 site (Peckham, OK)": [
+            36.8794,
+            -97.0864
+        ],
+        "ARM nsaC1 site (Barrow, AK) - ocean": [
+            71.49697,
+            -157.06229
+        ],
+        "ARM nsaC1 site (Barrow, AK) - land": [
+            71.15323,
+            -156.53989
+        ],
+        "ARM oliM1 site (Oliktok, AK) - ocean": [
+            70.78143,
+            -149.73155
+        ],
+        "ARM oliM1 site (Oliktok, AK) - land": [
+            70.28439,
+            -149.89177
+        ],
+        "Summit Station (Greenland) - land": [
+            72.57902,
+            -38.31273
+        ],
+        "Villum (Greenland) - ocean": [
+            81.68476,
+            -16.34262
+        ],
+        "Villum (Greenland) - land": [
+            81.48763,
+            -16.19316
+        ],
+        "Alert (Canada) - ocean": [
+            82.58997,
+            -61.99617
+        ],
+        "Alert (Canada) - land": [
+            82.42912,
+            -61.99471
+        ],
+        "Eureka (Canada) - ocean": [
+            79.73534,
+            -86.63915
+        ],
+        "Eureka (Canada) - land": [
+            80.04932,
+            -85.40496
+        ],
+        "Cherskii (Russia) - land": [
+            68.84815,
+            161.34439
+        ],
+        "Cherskii (Russia) - ocean": [
+            69.78486,
+            161.20229
+        ],
+        "Tiksi (Russia) - ocean": [
+            71.62601,
+            129.76688
+        ],
+        "Tiksi (Russia) - land": [
+            71.57687,
+            128.58702
+        ],
+        "NyAlesund (Norway) - ocean": [
+            79.04417,
+            11.45254
+        ],
+        "NyAlesund (Norway) - land": [
+            78.91583,
+            11.8892
+        ],
+        "Pallas-Sodankyla - land": [
+            67.89949,
+            24.19294
+        ],
+        "ARM enaC1 site (Azores)": [
+            39.0916,
+            -28.0257
+        ],
+        "SHEBA location": [
+            76.0,
+            -165.0
+        ],
+        "YOPP Arctic Ocean Site 1": [
+            85.0,
+            10.0
+        ],
+        "YOPP Arctic Ocean Site 3": [
+            81.0,
+            -135.0
+        ],
+        "PECAN FP3 site (Ellis, KS)": [
+            38.9582,
+            -99.5742
+        ],
+        "FRAPPE DIAL/AERI site near BAO tower (Boulder, CO)": [
+            40.0451,
+            -105.0058
+        ],
+        "Vortex-SE-2016 site (Belle Mina, AL)": [
+            34.6902,
+            -86.8845
+        ],
+        "Vortex-SE-2017 site (Scottsboro, AL)": [
+            34.6871,
+            -86.0049
+        ],
+        "NY Mesonet site - Tupper Lake (NY)": [
+            44.2243,
+            -74.4411
+        ],
+        "NY Mesonet site - Albany (NY)": [
+            42.7518,
+            -73.8113
+        ],
+        "NY Mesonet site - Belleville (NY)": [
+            43.7882,
+            -76.1177
+        ],
+        "NY Mesonet site - Buffalo (NY)": [
+            42.9936,
+            -78.7946
+        ],
+        "NY Mesonet site - Chazy (NY)": [
+            44.889,
+            -73.4663
+        ],
+        "NY Mesonet site - Clymer (NY)": [
+            42.0214,
+            -79.6275
+        ],
+        "NY Mesonet site - Jordan (NY)": [
+            43.0687,
+            -76.47
+        ],
+        "NY Mesonet site - Owego (NY)": [
+            42.0249,
+            -76.2531
+        ],
+        "NY Mesonet site - Red Hook (NY)": [
+            41.9999,
+            -73.8841
+        ],
+        "NY Mesonet site - Webster (NY)": [
+            43.2601,
+            -77.4124
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (Forks, WA)": [
+            47.9745,
+            -124.3981
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (Astoria, OR)": [
+            46.1569,
+            -123.883
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (North Bend, OR)": [
+            43.42,
+            -124.24
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (McKinleyville, CA)": [
+            40.972,
+            -124.11
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (Bodega Bay, CA)": [
+            38.3191,
+            -123.0728
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (Point Sur, CA)": [
+            36.3043,
+            -121.8881
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (Santa Barbara, CA)": [
+            34.4295,
+            -119.8468
+        ],
+        "UMBC/Howard Univ site (Beltsville, MD)": [
+            39.05,
+            -76.8899
+        ],
+        "NOAA/ESRL/CSD/Hoover Building Site (Washington, DC)": [
+            38.894,
+            -77.033
+        ],
+        "DWD Lindenberg Observatory (Lindenberg, Germany)": [
+            52.2081,
+            14.1197
+        ],
+        "JOYCE Site (Juelich, Germany)": [
+            50.9086,
+            6.4136
+        ],
+        "Cabauw tower (Cabauw, Netherlands)": [
+            51.971,
+            4.927
+        ],
+        "FINO1 tower (North Sea)": [
+            54.0149,
+            6.5876
+        ],
+        "FINO3 tower (North Sea)": [
+            55.195,
+            7.158
+        ],
+        "NSF CHEESEHEAD Lakeland, WI Site": [
+            45.92,
+            -89.73
+        ],
+        "NSF CHEESEHEAD Prentice, WI Site": [
+            45.54,
+            -90.28
+        ],
+        "NSF CHEESEHEAD WLEF Tall Tower Site": [
+            45.9454,
+            -90.2731
+        ],
+        "NOAA/ARL Oliver Springs station": [
+            36.037,
+            -84.308
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (Platteville, CO)": [
+            40.1807,
+            -104.7253
+        ],
+        "SAIL/SPLASH Avery Picnic (PSL ASFS sled)": [
+            38.9726,
+            -106.9972
+        ],
+        "SAIL/SPLASH DOE AMF2 location": [
+            38.9564,
+            -106.9869
+        ],
+        "SAIL/SPLASH Kettle Ponds site": [
+            38.9418,
+            -106.9731
+        ],
+        "SAIL/SPLASH Kettle Ponds Annex (PSL ASFS sled)": [
+            38.9394,
+            -106.9699
+        ],
+        "SAIL/SPLASH Brush Creek": [
+            38.8592,
+            -106.9209
+        ],
+        "SAIL/SPLASH Roaring Judy Fish Hatchery site": [
+            38.7169,
+            -106.853
+        ],
+        "Vortex-SE site (Cullman, AL)": [
+            34.1944,
+            -86.797
+        ],
+        "Vortex-SE site (Courtland, AL)": [
+            34.659,
+            -87.3441
+        ],
+        "Vortex-SE site (Columbia, LA)": [
+            32.1243,
+            -92.0555
+        ],
+        "Vortex-SE site (Oakdale, LA)": [
+            30.7466,
+            -92.6869
+        ],
+        "Vortex-SE site (Greenwood, MS)": [
+            33.496,
+            -90.0893
+        ],
+        "Vortex-SE site (Starkville, MS)": [
+            33.4302,
+            -88.8456
+        ],
+        "WFIP-3 approximate barge location": [
+            40.75,
+            -70.8667
+        ],
+        "WFIP-3 Block Island airport location": [
+            41.1667,
+            -71.5667
+        ],
+        "WFIP-3 Nantucket Island water treatment location": [
+            41.25,
+            -70.1
+        ],
+        "WFIP-3 Cape Cod (CACO) site": [
+            42.03,
+            -70.049
+        ],
+        "WFIP-3 WHOI Air-Sea Interaction Tower (ASIT)": [
+            41.325,
+            -70.5667
+        ],
+        "NOAA/GML CAO tower (CO)": [
+            39.9227,
+            -103.9723
+        ],
+        "ARM AMF SEUS Central Facility Bankhead NF (AL)": [
+            34.343,
+            -87.3407
+        ],
+        "ARM AMF SEUS S5 Stanley Farms site (AL)": [
+            34.4398,
+            -86.687
+        ],
+        "ARM AMF SEUS S6 Suddath Farms site (AL)": [
+            34.1786,
+            -87.4531
+        ],
+        "ARM AMF EPCAPE deployment at Scripps Pier (CA)": [
+            32.8662,
+            -117.2562
+        ]
+    },
+    "hrrr": {
+        "ARM sgpC1 site (Lamont, OK)": [
+            36.6053,
+            -97.4857
+        ],
+        "ARM sgpE32 site (Medford, OK)": [
+            36.8167,
+            -97.82
+        ],
+        "ARM sgpE37 site (Waukomis, OK)": [
+            36.3106,
+            -97.9281
+        ],
+        "ARM sgpE39 site (Morrison, OK)": [
+            36.3736,
+            -97.0692
+        ],
+        "ARM sgpE41 site (Peckham, OK)": [
+            36.8794,
+            -97.0864
+        ],
+        "PECAN FP3 site (Ellis, KS)": [
+            38.9582,
+            -99.5742
+        ],
+        "FRAPPE DIAL/AERI site near BAO tower (Boulder, CO)": [
+            40.0451,
+            -105.0058
+        ],
+        "Vortex-SE site (Belle Mina, AL)": [
+            34.6902,
+            -86.8845
+        ],
+        "Vortex-SE site (Scottsboro, AL)": [
+            34.6871,
+            -86.0049
+        ],
+        "Vortex-SE site (Cullman, AL)": [
+            34.1944,
+            -86.797
+        ],
+        "Vortex-SE site (Courtland, AL)": [
+            34.659,
+            -87.3441
+        ],
+        "NY Mesonet site - Tupper Lake (NY)": [
+            44.2243,
+            -74.4411
+        ],
+        "NY Mesonet site - Albany (NY)": [
+            42.7518,
+            -73.8113
+        ],
+        "NY Mesonet site - Belleville (NY)": [
+            43.7882,
+            -76.1177
+        ],
+        "NY Mesonet site - Buffalo (NY)": [
+            42.9936,
+            -78.7946
+        ],
+        "NY Mesonet site - Chazy (NY)": [
+            44.889,
+            -73.4663
+        ],
+        "NY Mesonet site - Clymer (NY)": [
+            42.0214,
+            -79.6275
+        ],
+        "NY Mesonet site - Jordan (NY)": [
+            43.0687,
+            -76.47
+        ],
+        "NY Mesonet site - Owego (NY)": [
+            42.0249,
+            -76.2531
+        ],
+        "NY Mesonet site - Red Hook (NY)": [
+            41.9999,
+            -73.8841
+        ],
+        "NY Mesonet site - Webster (NY)": [
+            43.2601,
+            -77.4124
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (Forks, WA)": [
+            47.9745,
+            -124.3981
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (Astoria, OR)": [
+            46.1569,
+            -123.883
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (North Bend, OR)": [
+            43.42,
+            -124.24
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (McKinleyville, CA)": [
+            40.972,
+            -124.11
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (Bodega Bay, CA)": [
+            38.3191,
+            -123.0728
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (Point Sur, CA)": [
+            36.3043,
+            -121.8881
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (Santa Barbara, CA)": [
+            34.4295,
+            -119.8468
+        ],
+        "UMBC/Howard Univ site (Beltsville, MD)": [
+            39.05,
+            -76.8899
+        ],
+        "NOAA/ESRL/CSD/Hoover Building Site (Washington, DC)": [
+            38.894,
+            -77.033
+        ],
+        "NOAA/ARL CRN Bondville (Champaign, IL)": [
+            40.0062,
+            -88.2904
+        ],
+        "NOAA/ARL CRN Chestnut Ridge (Oak Ridge, TN)": [
+            35.9311,
+            -84.3323
+        ],
+        "NOAA/ARL CRN Audubon Grasslands (Arizona)": [
+            31.5907,
+            -110.5092
+        ],
+        "NOAA/ESRL/GMD SOLRAD ABQ (Albuquerque, NM)": [
+            35.038,
+            -106.6221
+        ],
+        "NOAA/ESRL/GMD SOLRAD BIS (Bismarck, ND)": [
+            46.7718,
+            -100.7596
+        ],
+        "NOAA/ESRL/GMD SOLRAD HNX (Hanford, CA)": [
+            36.3136,
+            -119.6316
+        ],
+        "NOAA/ESRL/GMD SOLRAD MSN (Madison, WI)": [
+            43.0725,
+            -89.4113
+        ],
+        "NOAA/ESRL/GMD SOLRAD ORT (Oak Ridge, TN)": [
+            35.961,
+            -84.2884
+        ],
+        "NOAA/ESRL/GMD SOLRAD SLC (Salt Lake City, UT)": [
+            40.7722,
+            -111.9549
+        ],
+        "NOAA/ESRL/GMD SOLRAD SEA (Seattle, WA)": [
+            47.6868,
+            -122.2567
+        ],
+        "NOAA/ESRL/GMD SOLRAD STE (Sterling, VA)": [
+            38.972,
+            -77.4869
+        ],
+        "NOAA/ESRL/GMD SOLRAD TLH (Tallahassee, FL)": [
+            30.3967,
+            -84.3295
+        ],
+        "NOAA/ESRL/GMD SURFRAD BND (Bondville, IL)": [
+            40.0519,
+            -88.3731
+        ],
+        "NOAA/ESRL/GMD SURFRAD TBL (Table Mountain Boulder, CO)": [
+            40.125,
+            -105.2368
+        ],
+        "NOAA/ESRL/GMD SURFRAD DRA (Desert Rock, NV)": [
+            36.6237,
+            -116.0195
+        ],
+        "NOAA/ESRL/GMD SURFRAD FPK (Fort Peck, MT)": [
+            48.3078,
+            -105.1017
+        ],
+        "NOAA/ESRL/GMD SURFRAD GWN (Godwin Creek, MS)": [
+            34.2547,
+            -89.8729
+        ],
+        "NOAA/ESRL/GMD SURFRAD PSU (Penn State Univ, PA)": [
+            40.7201,
+            -77.9309
+        ],
+        "NOAA/ESRL/GMD SURFRAD SXF (Sioux Falls, SD)": [
+            43.734,
+            -96.6233
+        ],
+        "NOAA/ESRL/CSD Doppler lidar site (Indianapolis, IN)": [
+            39.8619,
+            -86.0043
+        ],
+        "NOAA/ESRL David Skaggs Research Center (Boulder, CO)": [
+            39.9932,
+            -105.2609
+        ],
+        "NOAA/ESRL/GSD INL DLR site WS40": [
+            43.5574,
+            -116.154
+        ],
+        "NOAA/ESRL/GSD INL DLR site WS35": [
+            43.3935,
+            -115.9619
+        ],
+        "NOAA/ESRL/GSD INL DLR site WS28": [
+            43.1302,
+            -115.6031
+        ],
+        "NOAA/ESRL/GSD INL DLR site WS19": [
+            43.0048,
+            -115.2944
+        ],
+        "NOAA/ESRL/GSD INL DLR site WS23": [
+            43.0228,
+            -115.1739
+        ],
+        "NOAA/ESRL/GSD INL DLR site WS6": [
+            42.8806,
+            -115.0374
+        ],
+        "NOAA/ESRL/GSD INL DLR site WS41": [
+            42.8391,
+            -114.8202
+        ],
+        "NOAA/ESRL/GSD INL DLR site HC1": [
+            44.8881,
+            -116.8453
+        ],
+        "NOAA/ESRL/GSD INL DLR site HC2": [
+            45.0515,
+            -116.8139
+        ],
+        "NOAA/ESRL/GSD INL DLR site HC3": [
+            45.2431,
+            -116.7023
+        ],
+        "NOAA/GLERL ReCON Station Stannard Rock Light": [
+            47.1835,
+            -87.2251
+        ],
+        "NOAA/GLERL ReCON Station White Shoal Light": [
+            45.8422,
+            -85.1353
+        ],
+        "NOAA/GLERL ReCON Spectacle Reef Light": [
+            45.7732,
+            -84.1367
+        ],
+        "NOAA/GLERL ReCON Station Saginaw Bay Buoy": [
+            43.9856,
+            -83.5953
+        ],
+        "NOAA/GLERL ReCON Station Alpenda Thunder Bay Buoy": [
+            44.9857,
+            -83.2686
+        ],
+        "NOAA/GLERL ReCON Station Muskegon Buoy": [
+            43.1796,
+            -86.3599
+        ],
+        "NOAA/GLERL ReCON Station Reno Beach Station": [
+            41.6833,
+            -83.25
+        ],
+        "NSF CHEESEHEAD Lakeland, WI Site": [
+            45.92,
+            -89.73
+        ],
+        "NSF CHEESEHEAD Prentice, WI Site": [
+            45.54,
+            -90.28
+        ],
+        "NSF CHEESEHEAD WLEF Tall Tower Site": [
+            45.9454,
+            -90.2731
+        ],
+        "Univ Wisconsin Madison SSEC Building": [
+            43.0707,
+            -89.407
+        ],
+        "NOAA/ARL Oliver Springs station": [
+            36.037,
+            -84.308
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (Platteville, CO)": [
+            40.1807,
+            -104.7253
+        ],
+        "SAIL/SPLASH Avery Picnic (PSL ASFS sled)": [
+            38.9726,
+            -106.9972
+        ],
+        "SAIL/SPLASH DOE AMF2 location": [
+            38.9564,
+            -106.9869
+        ],
+        "SAIL/SPLASH Kettle Ponds site": [
+            38.9418,
+            -106.9731
+        ],
+        "SAIL/SPLASH Kettle Ponds Annex (PSL ASFS sled)": [
+            38.9394,
+            -106.9699
+        ],
+        "SAIL/SPLASH Brush Creek": [
+            38.8592,
+            -106.9209
+        ],
+        "SAIL/SPLASH Roaring Judy Fish Hatchery site": [
+            38.7169,
+            -106.853
+        ],
+        "Vortex-SE site (Columbia, LA)": [
+            32.1243,
+            -92.0555
+        ],
+        "Vortex-SE site (Oakdale, LA)": [
+            30.7466,
+            -92.6869
+        ],
+        "Vortex-SE site (Greenwood, MS)": [
+            33.496,
+            -90.0893
+        ],
+        "Vortex-SE site (Starkville, MS)": [
+            33.4302,
+            -88.8456
+        ],
+        "WFIP-3 approximate barge location": [
+            40.75,
+            -70.8667
+        ],
+        "WFIP-3 Block Island airport location": [
+            41.1667,
+            -71.5667
+        ],
+        "WFIP-3 Block Island over-water point": [
+            41.13167,
+            -71.58197
+        ],
+        "WFIP-3 Nantucket Island water treatment location": [
+            41.25,
+            -70.1
+        ],
+        "WFIP-3 Nantucket Island over-water point": [
+            41.22672,
+            -70.12465
+        ],
+        "WFIP-3 Cape Cod (CACO) site": [
+            42.03,
+            -70.049
+        ],
+        "WFIP-3 WHOI Air-Sea Interaction Tower (ASIT)": [
+            41.325,
+            -70.5667
+        ],
+        "WFIP3 WHOI Coastal Observatory Shore Lab on Marthas Vineyard": [
+            41.3618583,
+            -70.5229845
+        ],
+        "NOAA/GML CAO tower (CA)": [
+            39.9227,
+            -103.9723
+        ],
+        "ARM AMF SEUS Central Facility Bankhead NF (AL)": [
+            34.343,
+            -87.3407
+        ],
+        "ARM AMF SEUS S5 Stanley Farms site (AL)": [
+            34.4398,
+            -86.687
+        ],
+        "ARM AMF SEUS S6 Suddath Farms site (AL)": [
+            34.1786,
+            -87.4531
+        ],
+        "ARM AMF EPCAPE deployment at Scripps Pier (CA)": [
+            32.8662,
+            -117.2562
+        ]
+    },
+    "gfs": {
+        "ARM sgpC1 site (Lamont, OK)": [
+            36.6053,
+            -97.4857
+        ],
+        "ARM sgpE32 site (Medford, OK)": [
+            36.8167,
+            -97.82
+        ],
+        "ARM sgpE37 site (Waukomis, OK)": [
+            36.3106,
+            -97.9281
+        ],
+        "ARM sgpE39 site (Morrison, OK)": [
+            36.3736,
+            -97.0692
+        ],
+        "ARM sgpE41 site (Peckham, OK)": [
+            36.8794,
+            -97.0864
+        ],
+        "ARM nsaC1 site (Barrow, AK) - ocean": [
+            71.49697,
+            -157.06229
+        ],
+        "ARM nsaC1 site (Barrow, AK) - land": [
+            71.15323,
+            -156.53989
+        ],
+        "ARM oliM1 site (Oliktok, AK) - ocean": [
+            70.78143,
+            -149.73155
+        ],
+        "ARM oliM1 site (Oliktok, AK) - land": [
+            70.28439,
+            -149.89177
+        ],
+        "Summit Station (Greenland) - land": [
+            72.57902,
+            -38.31273
+        ],
+        "Villum (Greenland) - ocean": [
+            81.68476,
+            -16.34262
+        ],
+        "Villum (Greenland) - land": [
+            81.48763,
+            -16.19316
+        ],
+        "Alert (Canada) - ocean": [
+            82.58997,
+            -61.99617
+        ],
+        "Alert (Canada) - land": [
+            82.42912,
+            -61.99471
+        ],
+        "Eureka (Canada) - ocean": [
+            79.73534,
+            -86.63915
+        ],
+        "Eureka (Canada) - land": [
+            80.04932,
+            -85.40496
+        ],
+        "Cherskii (Russia) - land": [
+            68.84815,
+            161.34439
+        ],
+        "Cherskii (Russia) - ocean": [
+            69.78486,
+            161.20229
+        ],
+        "Tiksi (Russia) - ocean": [
+            71.62601,
+            129.76688
+        ],
+        "Tiksi (Russia) - land": [
+            71.57687,
+            128.58702
+        ],
+        "NyAlesund (Norway) - ocean": [
+            79.04417,
+            11.45254
+        ],
+        "NyAlesund (Norway) - land": [
+            78.91583,
+            11.8892
+        ],
+        "Pallas-Sodankyla - land": [
+            67.89949,
+            24.19294
+        ],
+        "ARM enaC1 site (Azores)": [
+            39.0916,
+            -28.0257
+        ],
+        "SHEBA location": [
+            76.0,
+            -165.0
+        ],
+        "YOPP Arctic Ocean Site 1": [
+            85.0,
+            10.0
+        ],
+        "YOPP Arctic Ocean Site 3": [
+            81.0,
+            -135.0
+        ],
+        "PECAN FP3 site (Ellis, KS)": [
+            38.9582,
+            -99.5742
+        ],
+        "FRAPPE DIAL/AERI site near BAO tower (Boulder, CO)": [
+            40.0451,
+            -105.0058
+        ],
+        "Vortex-SE-2016 site (Belle Mina, AL)": [
+            34.6902,
+            -86.8845
+        ],
+        "Vortex-SE-2017 site (Scottsboro, AL)": [
+            34.6871,
+            -86.0049
+        ],
+        "NY Mesonet site - Tupper Lake (NY)": [
+            44.2243,
+            -74.4411
+        ],
+        "NY Mesonet site - Albany (NY)": [
+            42.7518,
+            -73.8113
+        ],
+        "NY Mesonet site - Belleville (NY)": [
+            43.7882,
+            -76.1177
+        ],
+        "NY Mesonet site - Buffalo (NY)": [
+            42.9936,
+            -78.7946
+        ],
+        "NY Mesonet site - Chazy (NY)": [
+            44.889,
+            -73.4663
+        ],
+        "NY Mesonet site - Clymer (NY)": [
+            42.0214,
+            -79.6275
+        ],
+        "NY Mesonet site - Jordan (NY)": [
+            43.0687,
+            -76.47
+        ],
+        "NY Mesonet site - Owego (NY)": [
+            42.0249,
+            -76.2531
+        ],
+        "NY Mesonet site - Red Hook (NY)": [
+            41.9999,
+            -73.8841
+        ],
+        "NY Mesonet site - Webster (NY)": [
+            43.2601,
+            -77.4124
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (Forks, WA)": [
+            47.9745,
+            -124.3981
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (Astoria, OR)": [
+            46.1569,
+            -123.883
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (North Bend, OR)": [
+            43.42,
+            -124.24
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (McKinleyville, CA)": [
+            40.972,
+            -124.11
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (Bodega Bay, CA)": [
+            38.3191,
+            -123.0728
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (Point Sur, CA)": [
+            36.3043,
+            -121.8881
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (Santa Barbara, CA)": [
+            34.4295,
+            -119.8468
+        ],
+        "UMBC/Howard Univ site (Beltsville, MD)": [
+            39.05,
+            -76.8899
+        ],
+        "NOAA/ESRL/CSD/Hoover Building Site (Washington, DC)": [
+            38.894,
+            -77.033
+        ],
+        "DWD Lindenberg Observatory (Lindenberg, Germany)": [
+            52.2081,
+            14.1197
+        ],
+        "JOYCE Site (Juelich, Germany)": [
+            50.9086,
+            6.4136
+        ],
+        "Cabauw tower (Cabauw, Netherlands)": [
+            51.971,
+            4.927
+        ],
+        "FINO1 tower (North Sea)": [
+            54.0149,
+            6.5876
+        ],
+        "FINO3 tower (North Sea)": [
+            55.195,
+            7.158
+        ],
+        "NSF CHEESEHEAD Lakeland, WI Site": [
+            45.92,
+            -89.73
+        ],
+        "NSF CHEESEHEAD Prentice, WI Site": [
+            45.54,
+            -90.28
+        ],
+        "NSF CHEESEHEAD WLEF Tall Tower Site": [
+            45.9454,
+            -90.2731
+        ],
+        "NOAA/ARL Oliver Springs station": [
+            36.037,
+            -84.308
+        ],
+        "NOAA/ESRL/PSD 449 MHz profiler RASS site (Platteville, CO)": [
+            40.1807,
+            -104.7253
+        ],
+        "SAIL/SPLASH Avery Picnic (PSL ASFS sled)": [
+            38.9726,
+            -106.9972
+        ],
+        "SAIL/SPLASH DOE AMF2 location": [
+            38.9564,
+            -106.9869
+        ],
+        "SAIL/SPLASH Kettle Ponds site": [
+            38.9418,
+            -106.9731
+        ],
+        "SAIL/SPLASH Kettle Ponds Annex (PSL ASFS sled)": [
+            38.9394,
+            -106.9699
+        ],
+        "SAIL/SPLASH Brush Creek": [
+            38.8592,
+            -106.9209
+        ],
+        "SAIL/SPLASH Roaring Judy Fish Hatchery site": [
+            38.7169,
+            -106.853
+        ],
+        "Vortex-SE site (Cullman, AL)": [
+            34.1944,
+            -86.797
+        ],
+        "Vortex-SE site (Courtland, AL)": [
+            34.659,
+            -87.3441
+        ],
+        "Vortex-SE site (Columbia, LA)": [
+            32.1243,
+            -92.0555
+        ],
+        "Vortex-SE site (Oakdale, LA)": [
+            30.7466,
+            -92.6869
+        ],
+        "Vortex-SE site (Greenwood, MS)": [
+            33.496,
+            -90.0893
+        ],
+        "Vortex-SE site (Starkville, MS)": [
+            33.4302,
+            -88.8456
+        ],
+        "WFIP-3 approximate barge location": [
+            40.75,
+            -70.8667
+        ],
+        "WFIP-3 Block Island airport location": [
+            41.1667,
+            -71.5667
+        ],
+        "WFIP-3 Nantucket Island water treatment location": [
+            41.25,
+            -70.1
+        ],
+        "WFIP-3 Cape Cod (CACO) site": [
+            42.03,
+            -70.049
+        ],
+        "WFIP-3 WHOI Air-Sea Interaction Tower (ASIT)": [
+            41.325,
+            -70.5667
+        ],
+        "NOAA/GML CAO tower (CO)": [
+            39.9227,
+            -103.9723
+        ],
+        "ARM AMF SEUS Central Facility Bankhead NF (AL)": [
+            34.343,
+            -87.3407
+        ],
+        "ARM AMF SEUS S5 Stanley Farms site (AL)": [
+            34.4398,
+            -86.687
+        ],
+        "ARM AMF SEUS S6 Suddath Farms site (AL)": [
+            34.1786,
+            -87.4531
+        ],
+        "ARM AMF EPCAPE deployment at Scripps Pier (CA)": [
+            32.8662,
+            -117.2562
+        ]
+    },
+    "wfip3km": {
+        "WFIP-3 approximate barge location": [
+            40.75,
+            -70.8667
+        ],
+        "WFIP-3 Block Island airport location": [
+            41.1775,
+            -71.5887
+        ],
+        "WFIP-3 Block Island over-water point": [
+            41.178,
+            -71.517
+        ],
+        "WFIP-3 Nantucket Island water treatment location": [
+            41.2591,
+            -70.118
+        ],
+        "WFIP-3 Nantucket Island over-water point": [
+            41.2047,
+            -70.1188
+        ],
+        "WFIP-3 Cape Cod (CACO) site": [
+            42.03,
+            -70.049
+        ],
+        "WFIP-3 WHOI Air-Sea Interaction Tower (ASIT)": [
+            41.325,
+            -70.5667
+        ],
+        "WFIP-3 WHOI Coastal Observatory Shore Lab on Marthas Vineyard": [
+            41.3618583,
+            -70.5229845
+        ]
+    },
+
+    "wfip1km": {
+        "WFIP-3 approximate barge location": [
+            40.75,
+            -70.8667
+        ],
+        "WFIP-3 Block Island airport location": [
+            41.1667,
+            -71.5667
+        ],
+        "WFIP-3 Block Island over-water point": [
+            41.13167,
+            -71.58197
+        ],
+        "WFIP-3 Nantucket Island water treatment location": [
+            41.25,
+            -70.1
+        ],
+        "WFIP-3 Nantucket Island over-water point": [
+            41.22672,
+            -70.12465
+        ],
+        "WFIP-3 Cape Cod (CACO) site": [
+            42.03,
+            -70.049
+        ],
+        "WFIP-3 WHOI Air-Sea Interaction Tower (ASIT)": [
+            41.325,
+            -70.5667
+        ],
+        "WFIP3 WHOI Coastal Observatory Shore Lab on Marthas Vineyard": [
+            41.3618583,
+            -70.5229845
+        ]
+    }
+
+
+}

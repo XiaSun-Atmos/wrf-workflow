@@ -1,0 +1,4 @@
+CODEdir = '/home/dmurray/scripts/PERiLS/modelobs/'
+DATAdir = '/Projects/PERiLS/modelobs'
+MODELdir = '/psd3data/wfipdata/RAP_HRRR_columns'
+TROPoedir = '/psd3data/wfipdata/ql_scripts/PERILS_2022/TROPoe'

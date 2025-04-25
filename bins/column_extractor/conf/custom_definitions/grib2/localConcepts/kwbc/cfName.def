@@ -1,0 +1,25 @@
+# Planetary boundary layer height
+'Planetary boundary layer height' = {
+         discipline = 0 ;
+         parameterCategory = 3 ;
+         parameterNumber = 196 ;
+}
+# Total column cloud ice water
+'Total column cloud ice water' = {
+         discipline = 0 ;
+         parameterCategory = 1 ;
+         parameterNumber = 70 ;
+}
+# Total column cloud liquid water
+'Total column cloud liquid water' = {
+         discipline = 0 ;
+         parameterCategory = 1 ;
+         parameterNumber = 69 ;
+}
+# Aerosol optical thickness
+'Aerosol optical thickness' = {
+         discipline = 0 ;
+         parameterCategory = 20 ;
+         parameterNumber = 102 ;
+}
+# --------------------------------------------- ABOVE ADDED BY US

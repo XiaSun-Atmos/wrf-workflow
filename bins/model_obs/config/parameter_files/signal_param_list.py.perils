@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+# Defining Relevant Station Parameter Lists
+###############################################################################
+Created on Wed Oct 23 13:31:22 2019
+@author: jduncan
+@modified: dmurray
+"""
+
+#Define the Stations of Interest
+station_of_interest = ['CTD', 'CLB', 'ACP', 'GWO', 'STF']
+
+#Define the Time Period of Interest
+SGPper_oi = 90; # Defines the Extent of the Data Being Downloaded and Analyzed
+DSper_oi = 90; # Defines the Period with Which to Attempt Data Storage
+
+""" Define Datstream Prefixes of Interest """
+#####################################
+# datastream does not need to be available at each station
+# defining station independent datastreams of interest
+###############################################################################
+sig_oi = ['pslmet','rwp915','rwp449','psldisd','tropoe']
+
+# define the of interest processing level 
+sig_descr = ['PSL-standard Meteorological Instrumentation at Surface',\
+             '915-MHz Radar Wind Profiler/RASS (RWP915): wind profile data', \
+             '449-MHz Radar Wind Profiler/RASS (RWP449): wind profile data' \
+             'PSL Disdrometer Statistics',\
+             'TROPoe ASSIST Data'\
+            ]
+
+""" Define Instrument-Specific Measurement Sites """
+####################################################
+pslmet_oi = ['CTD','CLB', 'ACP', 'GWO', 'STF']
+psldisd_oi = ['CTD']
+rwp915_oi = ['CTD','CLB', 'ACP', 'GWO', 'STF']
+rwp449_oi = ['CTD']
+tropoe_oi = ['CTD','CLB']

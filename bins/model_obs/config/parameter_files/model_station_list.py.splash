@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Declare Relevant Parameters to Faciliate Measurement Data Extraction
+@author: dmurray
+"""
+# SPLASH HRRR nearest grid point
+#AYP_HRRR_v4_lat = 38.972425; AYP_HRRR_v4_lon = -106.996855; AYP_HRRR_v4_alt=2934;
+BCK_HRRR_v4_lat = 38.8513; BCK_HRRR_v4_lon = -106.9103; BCK_HRRR_v4_alt=2784.9;
+KPS_HRRR_v4_lat = 38.9559; KPS_HRRR_v4_lon = -106.9590; KPS_HRRR_v4_alt=3291.3;
+#RJY_HRRR_v4_lat = 38.717235; RJY_HRRR_v4_lon = -106.852563; RJY_HRRR_v4_alt=2498;
+# SPLASH RAP nearest grid point
+BCK_RAP_v5_lat = 38.8513; BCK_RAP_v5_lon = -106.9103; BCK_RAP_v5_alt=2784.9;
+KPS_RAP_v5_lat = 38.9559; KPS_RAP_v5_lon = -106.9590; KPS_RAP_v5_alt=3291.3;

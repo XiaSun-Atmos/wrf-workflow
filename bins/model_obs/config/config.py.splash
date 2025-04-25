@@ -1,0 +1,4 @@
+CODEdir = '/home/dmurray/scripts/SPLASH/modelobs/'
+DATAdir = '/PSL/Observations/Campaigns/SPLASH/modelobs/'
+MODELdir = '/psd3data/wfipdata/RAP_HRRR_columns'
+TROPoedir = '/psd3data/wfipdata/ql_scripts/SPLASH_2021/TROPoe/'

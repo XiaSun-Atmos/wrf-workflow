@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+The Purpose of this Module is to Define the Standard and Extended Forecast 
+Lengths for Various Models. This Facilitates Analyses so these Values to not 
+Have to be Explicitly Defined in Each Script
+############################################
+Note that the Standard Forecast Lengths are Padded by One Indice Relative to 
+the Actual Forecast Length
+
+###############################################################################
+Created on Thu Sep 17 16:43:12 2020
+@author: jamesduncan1
+@modified: dmurray
+"""
+
+""" Define Model Names """
+model_names = ['HRRR_v4','RAP_v5']
+model_dirs = ['rapV5_hrrrV4/hrrr','rapV5_hrrrV4/rap']
+
+""" NCEP and ESRL Model Standard and Model Extended Forecast Lengths
+########################################################################### """
+# Denote those for the HRRRv4 Model
+hrrr_v4_fx = 19; # 18 Hour Standard Forecast
+hrrr_v4_ext = 48; # Extended Forecast Length
+
+# Denote those for the RAPv5 Model
+rap_v5_fx = 22; # 21 Hour Standard Forecast
+rap_v5_ext = 51; # Extended Forecast Length
+
+# Denote those for the GFSv16 Model (if available)
+gfs_v16_fx = 25; # First 24 Hour Standard Forecast
+gfs_v16_ext = 48; # Extended Forecast Length
+
+###############################################################################
+# +1 Hr to Forecast Length to Account for Ini Z Forecast Inclusion

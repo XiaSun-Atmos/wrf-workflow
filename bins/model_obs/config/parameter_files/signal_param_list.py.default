@@ -1,0 +1,41 @@
+"""
+# Defining Relevant Station Parameter Lists
+###############################################################################
+Created on Wed Oct 23 13:31:22 2019
+@author: jduncan
+@modified: dmurray
+"""
+
+#Define the Stations of Interest
+station_of_interest = [] # set stations, e.g., ['BID', 'NTE']
+
+#Define the Time Period of Interest - modify as needed
+SGPper_oi = 30; # Defines the Extent of the Data Being Downloaded and Analyzed
+DSper_oi = 30; # Defines the Period with Which to Attempt Data Storage
+
+""" Define Datstream Prefixes of Interest """
+#####################################
+# datastream does not need to be available at each station
+# defining station independent datastreams of interest
+###############################################################################
+sig_oi = ['pslmet','rwp915','rwp449','tropoe','dl']
+
+# define the of interest processing level 
+sig_descr = ['PSL-standard Meteorological Instrumentation at Surface',\
+             '915-MHz Radar Wind Profiler/RASS (RWP915): wind profile data', \
+             '449-MHz Radar Wind Profiler/RASS (RWP449): wind profile data' \
+#             'PSL Disdrometer Statistics', \
+             'TROPoe RASS Data',
+#             'GML Ceilometer data',
+             'CU Profiling Lidar',
+              ]
+
+""" Define Instrument-Specific Measurement Sites for each signal """
+####################################################
+pslmet_oi = [] # e.g. ['BID','NTE']
+psldisd_oi = []
+rwp915_oi = []
+rwp449_oi = []
+tropoe_oi = []
+gmlceil_oi = []
+dl_oi = []

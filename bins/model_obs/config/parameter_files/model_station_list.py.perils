@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Declare Relevant Parameters to Faciliate Measurement Data Extraction
+@author: dmurray
+"""
+# HRRR nearest grid point
+CTD_HRRR_v4_lat = 34.66; CTD_HRRR_v4_lon = -87.35; CTD_HRRR_v4_alt=187;
+# RAP nearest grid point
+CTD_RAP_v5_lat = 34.66; CTD_RAP_v5_lon = -87.35; CTD_RAP_v5_alt=187;

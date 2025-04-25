@@ -1,0 +1,39 @@
+&share
+ wrf_core = 'ARW',
+ max_dom = 2,
+ start_date = 'STARTYY-STARTMM-STARTDD_STARTHH:00:00','STARTYY-STARTMM-STARTDD_STARTHH:00:00',
+ end_date   = 'ENDDATE','ENDDATE',
+ interval_seconds = 10800
+/
+
+&geogrid
+ parent_id         =   1,   1,
+ parent_grid_ratio =   1,   3,
+ i_parent_start    = 1,134,
+ j_parent_start    = 1,148,
+ e_we          = 500,700,
+ e_sn          = 495,601,
+ geog_data_res = 'bnu_soil_30s+modis_landuse_21class_15s_with_lakes+maxsnowalb_modis+albedo_modis+modis_lai', 'bnu_soil_30s+modis_landuse_21class_15s_with_lakes+maxsnowalb_modis+albedo_modis+modis_lai'
+ dx = 3000,
+ dy = 3000,
+ map_proj = 'lambert',
+ ref_lat   = 40.6,
+ ref_lon   = -70.8,
+ truelat1  = 40.6,
+ truelat2  = 40.6,
+ stand_lon = -70.8,
+ geog_data_path = '/scratch2/BMC/wrfruc/smirnova/GEOG',
+ ref_x = 250.0,
+ ref_y = 247.5,
+/
+
+&ungrib
+ out_format = 'WPS',
+ prefix = 'FILE',
+/
+
+&metgrid
+ fg_name = 'FILE',
+ constants_name = 'QNWFA_QNIFA_Monthly_GFS_50_lev',
+ io_form_metgrid = 2, 
+/

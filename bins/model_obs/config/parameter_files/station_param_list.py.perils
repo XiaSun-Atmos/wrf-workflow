@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Declare Relevant Parameters to Faciliate Measurement Data Extraction
+@author: dmurray
+"""
+
+###############################################################################
+
+#Define the Data Ouput Directory
+DIRout_extr = '/Projects/PERiLS/modelobs/Measurement_Data/Stations/'
+###############################################################################
+EXPname = 'PERiLS'
+EXPstart = '20220201'
+EXPend = '20230615'
+###############################################################################
+# Define the Station Name, Description, and Location
+
+# PERiLS/VORTEX stations
+CTDname = 'CTD'; CTDdescr = 'Courtland, AL'; CTDlat = 34.66; CTDlon = -87.35; CTDalt=187; CTDout = DIRout_extr+CTDname+'out/'; CTDprojID = 'CTD';
+CTDvars = ['pressure','temperature','relative_humidity','wind_speed','vecwind_speed',\
+          'wind_direction','stdwind_direction','battery_voltage','solar_radiation','net_radiation','precipitation','maxwind_speed'];
+CTDassist='ASSIST8'; CTDmwr='MP3297A';
+CLBname = 'CLB'; CLBdescr = 'Columbia, LA'; CLBlat = 32.124322; CLBlon = -92.055569; CLBalt=20; CLBout = DIRout_extr+CLBname+'out/'; CLBprojID = 'CLB';
+CLBvars = ['pressure','temperature','relative_humidity','wind_speed','vecwind_speed',\
+          'wind_direction','stdwind_direction','battery_voltage','solar_radiation','net_radiation','precipitation','maxwind_speed'];
+CLBassist='ASSIST7'; CLBmwr='MP3058A';
+ACPname = 'ACP'; ACPdescr = 'Oakdale, LA'; ACPlat = 30.746645; ACPlon = -92.686859; ACPalt=32; ACPout = DIRout_extr+ACPname+'out/'; ACPprojID = 'ACP';
+ACPvars = ['pressure','temperature','relative_humidity','wind_speed','vecwind_speed',\
+          'wind_direction','stdwind_direction','battery_voltage','solar_radiation','net_radiation','precipitation','maxwind_speed'];
+GWOname = 'GWO'; GWOdescr = 'Greenwood, MS'; GWOlat = 33.495967; GWOlon = -90.089298; GWOalt=47; GWOout = DIRout_extr+GWOname+'out/'; GWOprojID = 'GWO';
+GWOvars = ['pressure','temperature','relative_humidity','wind_speed','vecwind_speed',\
+          'wind_direction','stdwind_direction','battery_voltage','solar_radiation','net_radiation','precipitation','maxwind_speed'];
+STFname = 'STF'; STFdescr = 'Starkville, MS'; STFlat = 33.4302245; STFlon = -88.8455524; STFalt=95; STFout = DIRout_extr+STFname+'out/'; STFprojID = 'STF';
+STFvars = ['pressure','temperature','relative_humidity','wind_speed','vecwind_speed',\
+          'wind_direction','stdwind_direction','battery_voltage','solar_radiation','net_radiation','precipitation','maxwind_speed'];

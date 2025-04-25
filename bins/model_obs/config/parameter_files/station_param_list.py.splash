@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Declare Relevant Parameters to Faciliate Measurement Data Extraction
+@author: dmurray
+"""
+###############################################################################
+#Define the Data Ouput Directory
+DIRout_extr = '/PSL/Observations/Campaigns/SPLASH/modelobs/Measurement_Data/Stations/'
+###############################################################################
+EXPname = 'SPLASH'
+###############################################################################
+# Define the Station Name, Description, and Location
+
+# SPLASH stations
+AYPname = 'AYP'; AYPdescr = 'Avery Picnic, CO'; AYPlat = 38.972425; AYPlon = -106.996855; AYPalt=2934; AYPout = DIRout_extr+AYPname+'out/';
+AYPvars=[]
+BCKname = 'BCK'; BCKdescr = 'Brush Creek, CO'; BCKlat = 38.858893; BCKlon = -106.921020; BCKalt=2723; BCKout = DIRout_extr+BCKname+'out/';
+BCKvars=[]
+KPSname = 'KPS'; KPSdescr = 'Kettle Ponds, CO'; KPSlat = 38.942005; KPSlon = -106.973006; KPSalt=2863; KPSout = DIRout_extr+KPSname+'out/';
+KPSvars=[]
+RJYname = 'RJY'; RJYdescr = 'Roaring Judy, CO'; RJYlat = 38.717235; RJYlon = -106.852563; RJYalt=2498; RJYout = DIRout_extr+RJYname+'out/';
+RJYvars=['pressure','temperature','relative_humidity','wind_speed','vecwind_speed','wind_direction','stdwind_direction','battery_voltage','maxwind_speed']
+RJYprojID='ror'; RJYassist='ASSIST8'; RJYmwr='MP3297A_RAP';

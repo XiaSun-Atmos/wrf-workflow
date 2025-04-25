@@ -1,0 +1,37 @@
+name: graphics_tests
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+jobs:
+  test_graphics:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          lfs: true
+      - name: Install Micromamba with no environment
+        uses: mamba-org/provision-with-micromamba@main
+        with:
+          environment-file: false
+          channel-priority: flexible
+          cache-downloads: true
+          cache-env: true
+      - name: Install pygraf environment
+        run: micromamba create -n pygraf -y -f /home/runner/work/pygraf/pygraf/environment.yml
+      - name: Lint code
+        run: |
+         micromamba activate pygraf
+         find . -type f -name "*.py" | xargs pylint
+      - name: Test code
+        run: |
+         micromamba activate pygraf
+         python -m pytest --nat-file tests/data/wrfnat_hrconus_07.grib2 --prs-file tests/data/wrfprs_hrconus_07.grib2 --ignore=tests/test_hrrr_maps.py

@@ -1,0 +1,18 @@
+
+#!/bin/bash
+for i in $(seq -w 00 30); do
+    ln -s /upp_out/${YYYY}${MM}${DD}${HH}/WRFNAT${i}.tm00_d02 /data/input/wfip3.wrfnat.${i}.tm00_d02
+    ln -s /upp_out/${YYYY}${MM}${DD}${HH}/WRFPRS${i}.tm00_d02 /data/input/wfip3.wrfprs.${i}.tm00_d02
+    ln -s /upp_out/${YYYY}${MM}${DD}${HH}/WRFTWO${i}.tm00_d02 /data/input/wfip3.wrftwo.${i}.tm00_d02
+
+    python3 src/main.py -c ./conf -f /data/input/wfip3.wrfnat.${i}.tm00_d02 /data/input/wfip3.wrfprs.${i}.tm00_d02 /data/input/wfip3.wrftwo.${i}.tm00_d02
+    rm -rf /data/input/wfip3.wrfnat.${i}.tm00_d02 /data/input/wfip3.wrfprs.${i}.tm00_d02 /data/input/wfip3.wrftwo.${i}.tm00_d02
+    rm -rf /data/input/wfip3.wrfnat.${i}.tm00_d02*.idx /data/input/wfip3.wrfprs.${i}.tm00_d02*.idx /data/input/wfip3.wrftwo.${i}.tm00_d02*.idx 
+
+    # ln -s /upp_out/2024080900/WRFNAT${i}.tm00_d02 /column_out/2024080900/d02/wfip3.wrfnat${i}.tm00_d02
+    # ln -s /upp_out/2024080900/WRFPRS${i}.tm00_d02 /column_out/2024080900/d02/wfip3.wrfprs${i}.tm00_d02
+    # ln -s /upp_out/2024080900/WRFTWO${i}.tm00_d02 /column_out/2024080900/d02/wfip3.wrftwo${i}.tm00_d02
+
+    # python3 src/main.py -c ./conf -f /column_out/2024080900/d02/wfip3.wrfnat${i}.tm00_d02 /column_out/2024080900/d02/wfip3.wrfprs${i}.tm00_d02 /column_out/2024080900/d02/wfip3.wrftwo${i}.tm00_d02 -l /column_out/2024080900/d02 -o /column_out/2024080900/d02
+
+done

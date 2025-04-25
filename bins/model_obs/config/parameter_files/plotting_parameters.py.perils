@@ -1,0 +1,344 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Nov 15
+@author: jduncan
+
+Declare Global Plotting Parameters Instead of Establishing them within Each 
+Instrument/Signal Plotting Function
+"""
+import numpy as np
+
+import os
+""" Define Figure Width and Aspect Ratio Information """
+FIGwdth = 5;
+FIGasp = 4/6;
+
+""" ###########################################################################
+Define Which Model Interpolation Method (i.e. nearest-Neighbor/Bilinear) to Use
+########################################################################### """
+INToi = 1; # 1 for bilienar and 0 for nearest-neighbor 
+
+""" ###########################################################################
+Profiling Title Descriptors
+########################################################################### """
+DLmeas_x_title = 0.82; # 0.777; Previous Value Prior to Right-Padding Adjustment
+DLmeas_y_title = 0.986; # 0.92; Previous Value Priot to Top-Padding Adjustment
+DLmeas_y_title2 = 0.970; # For wind barb plots need to adjust down
+CBunit_loc = (5.3,1.16); #13.5 previously (prior to increase cbar size)
+CBaspect = 6 #long-to-short axis ratio for colorbar (i.e. width modification)
+CBaspect2 = 12 #long-to-short axis ratio for colorbar (i.e. width modification) (2x size plot)
+CBaspect3 = 17 #long-to-short axis ratio for colorbar (i.e. width modification) (3x size plot)
+
+"""############################################################################
+Title Descriptor Specifications
+############################################################################"""
+# Define Other Figure Specific Parameters
+#Tloc = [0.085,1] # date title
+Tloc = [0,1] # station id title
+Bloc = [0.125,1] #bias stat title
+Bloc_alt = [0.28,1] #bias stat tile if mean bias included
+Bloc_left = [0,1] #bias stat tile if mean bias included
+SPTLt_loc = [1,1.01] #[1.05,1.01] (if units included) #spatial plot titles
+
+"""############################################################################
+Y-Lim Specifications
+############################################################################"""
+TICKint = 5;
+SHGTrnd_bse = 250; # height bounds for spatial plots
+
+# Wind Speed
+WSrnd_bse = 5;
+WSbias_bse = 2.5;
+WSsptl_bias_bse = 2.5;
+WSmin=0;
+WSmax=20;
+WSbmin=-5;
+WSbmax=5;
+
+# Wind Power
+POWrnd_bse = .5;
+POWbias_bse = .5;
+POWmin=0
+POWmax=1;
+POWbmin=-1;
+POWbmax=1;
+
+# Wind Direction
+WDsptl_bias_bse = 5;
+WDmin=0;
+WDmax=360;
+WDbmin=-180;
+WDbmax=180;
+
+# Signal-to-Noise Ratio (SNR)
+SNRrnd_bse = 2.5; #if in dB
+#SNRrnd_bse = 1; #if unitless
+
+#Temperature
+TEMPrnd_bse = 5;
+TEMPbias_bse = 5;
+TEMPsptl_bias_bse = 2.5;
+TEMPcint=5;
+
+#Temperature
+THETArnd_bse = 5;
+THETAbias_bse = 5;
+THETAsptl_bias_bse = 2.5;
+THETAcint=5;
+
+#Precipitation
+# 2-minute precip
+PRrnd_bse = .5;
+PRbias_bse = .5;
+PRmin=0;
+PRmax=1;
+# accumulated precipitation
+APCPmin=0;
+APCPmax=10;
+APCPrnd_bse = 2.5;
+APCPbias_bse = 2.5;
+APCPmin=0;
+APCPmax=10;
+APCPbmin=-2.5;
+APCPbmax=2.5;
+# precipitation rate
+PRATErnd_bse = 5;
+PRATEbias_bse = 5;
+
+# Relative Humidity
+RHrnd_bse = 5;
+RHbias_bse = 5;
+RHmin=0;
+RHmax=100;
+RHbmin=-20;
+RHbmax=20;
+
+# Pressure
+PRESrnd_bse = 10;
+PRESbias_bse = 5;
+
+# Vapor Pressure
+VPRrnd_bse = 5;
+VPRbias_bse = 5;
+
+# Mixing Ratio (obs)
+MXRATrnd_bse = 5;
+MXRATbias_bse = 2.5;
+MXRATcint=2;
+
+# Mixing Ratio (TROPoe)
+MIXRrnd_bse = 5;
+MIXRbias_bse = 2.5;
+MIXRcint=2;
+
+# Surface Radiation
+SRADrnd_bse = 100;
+SRADbias_bse = 50;
+
+#Flux Information
+FLUXrnd_bse = 100;
+FLUXbias_bse = 100;
+
+#LCL Information
+LCLrnd_bse = 300;
+LCLbias_bse = 250;
+
+#PWV Information
+PWVrnd_bse = 2;
+PWVbias_bse = 1;
+PWVmin=0;
+PWVmax=10;
+PWVbmin=-2;
+PWVbmax=2;
+
+#PBLH Information
+PBLHrnd_bse = 500;
+PBLHbias_bse = 250;
+PBLHmin=0;
+PBLHmax=1000;
+PBLHbmin=-500;
+PBLHbmax=500;
+
+#CBH Information
+CBHrnd_bse = 500;
+CBHbias_bse = 250;
+CBHmin=0;
+CBHmax=5000;
+CBHbmin=-2000;
+CBHbmax=2000;
+
+#LWP Information
+LWPrnd_bse = 2;
+LWPbias_bse = 1;
+LWPmin=0;
+LWPmax=10;
+LWPbmin=-20;
+LWPbmax=20;
+
+#Friction Velocity Information
+USTARrnd_bse = 1;
+USTARbias_bse = 1;
+
+"""############################################################################
+TROPoe variable ranges
+############################################################################"""
+"""  Winter ranges """
+TROPoe_TEMPmin=-10;
+TROPoe_TEMPmax=30;
+TROPoe_TEMPtick=np.arange(TROPoe_TEMPmin,TROPoe_TEMPmax+1,10);
+TROPoe_TEMPbmin=-10;
+TROPoe_TEMPbmax=10;
+TROPoe_TEMPbtick=np.arange(TROPoe_TEMPbmin,TROPoe_TEMPbmax+1,5);
+
+TROPoe_MIXRmin=0;
+TROPoe_MIXRmax=20;
+TROPoe_MIXRtick=np.arange(TROPoe_MIXRmin,TROPoe_MIXRmax+1,MIXRbias_bse);
+TROPoe_MIXRbmin=-5;
+TROPoe_MIXRbmax=5;
+TROPoe_MIXRbtick=np.arange(TROPoe_MIXRbmin,TROPoe_MIXRbmax+1,MIXRbias_bse);
+
+TROPoe_THETAmin=270;
+TROPoe_THETAmax=340;
+TROPoe_THETAtick=np.arange(TROPoe_THETAmin,TROPoe_THETAmax+1,10);
+TROPoe_THETAbmin=-10;
+TROPoe_THETAbmax=10;
+TROPoe_THETAbtick=np.arange(TROPoe_TEMPbmin,TROPoe_TEMPbmax+1,5);
+
+"""  Summer ranges """
+#TROPoe_TEMPmin=-25;
+#TROPoe_TEMPmax=15;
+#TROPoe_TEMPtick=np.arange(TROPoe_TEMPmin,TROPoe_TEMPmax+1,10);
+#TROPoe_TEMPbmin=-10;
+#TROPoe_TEMPbmax=10;
+#TROPoe_TEMPbtick=np.arange(TROPoe_TEMPbmin,TROPoe_TEMPbmax+1,5);
+#
+#TROPoe_MIXRmin=0;
+#TROPoe_MIXRmax=10;
+#TROPoe_MIXRtick=np.arange(TROPoe_MIXRmin,TROPoe_MIXRmax+1,MIXRbias_bse);
+#TROPoe_MIXRbmin=-5;
+#TROPoe_MIXRbmax=5;
+#TROPoe_MIXRbtick=np.arange(TROPoe_MIXRbmin,TROPoe_MIXRbmax+1,MIXRbias_bse);
+
+
+"""############################################################################
+Averaging periods
+############################################################################"""
+TROPoe_avgmins=60;
+PSLmet_avgmins=60;
+
+"""############################################################################
+Font Size Specifications
+############################################################################"""
+#X/Y Tick Font Size
+TICKfs = 7; 
+#X/Y Label Font Size
+LABELfs = 7;
+#Title Font Size
+TITLEfs = 7;
+#Legend/Annotation Font Size/Column spacing
+LEGfs = 7;
+LEGfs_bottom = 5;
+LEGcol_space=0.7 # legend column spacing
+#SRAD Specific Annotation Font Size
+RADfs = 5.5;
+#Colobar Tick Font Size
+Ctck_fs = 7
+#Image ID Font Size
+IDfs = 5;
+
+"""############################################################################
+X-Tick Spacing
+############################################################################"""
+Xdel = 2*60*60
+Xdel_ext = 4*60*60
+Tdel = 60*60
+
+"""############################################################################
+Vertical Legend Pad for Triplot
+############################################################################"""
+LEGpad_tri_ur = (1.025,1.32);
+LEGpad_tri_ul = (-0.025,1.29);
+LEGpad_dual = (1.025,1.17)
+LEGpad_double = (1.02,1.125);
+LEGpad_extra = (.5,1.15);
+LEGpad_extra_bottom = (.5,-0.13);
+
+BIASpad = (-0.025,0.935)
+IDpad_sptl = (0.9,0.025);
+#STNpad_sptl = (0.085,0.025);
+STNpad_sptl = (0.16,0.025);   # Date label position
+STN_end_pad_sptl = (0.88,0.025);  # End Date label position unequal
+DATEpad_sptl = (0.16,0.0625);  #Position Date for unequal plot heights
+DATE_end_pad_sptl = (0.88,0.0625);  #Position Date for unequal plot heights
+metDATEpad_sptl = (0.195,0.062);  #Position Date for plot heights (pslmet)
+metDATE_end_pad_sptl = (0.955,0.062);  #Position Date for plot heights (pslmet)
+ATTRpad_ctr_dual = (0.5,0.035);  #Position Date for plot heights (pslmet)
+ATTRpad_left_dual = (0.125,0.035);  #Position Date for plot heights (pslmet)
+ATTRpad_ctr_tri = (0.5,0.035);  #Position Date for plot heights (pslmet)
+ATTRpad_left_tri = (0.1,0.035);  #Position Date for plot heights (pslmet)
+GRIDpad_left_dual = (0.125,0.001);  #Position Date for plot heights (pslmet)
+GRIDpad_left_tri = (0.1,0.001);  #Position Date for plot heights (pslmet)
+
+"""############################################################################
+X-Label Padding
+############################################################################"""
+Xlab_pad_dual = (0.5,-0.187);
+Xlab_pad_tri = (0.5,-0.3)
+
+"""############################################################################
+Y-Label Padding
+############################################################################"""
+Ylab_pad = (-0.1,0.5);
+Ylab_pad_off = (-0.1,1.25);
+Ylab_pad_dl = (-0.1,0.5)
+
+"""############################################################################
+Wind Barb/Q-Plot Information
+############################################################################"""
+BARBdl_x_base = 1; # one-hour offset start
+BARBdl_x = 1; # one-hour delta
+BARBdl_x_ext = 3; # three-hour delta
+
+BARBdl_y = 16; # plot every 400 m
+BARBdl_y_base = 16; # start at 500 m 
+
+BARBdl_mdl_y = 4; # plot eveyr 400 m
+BARBdl_mdl_y_base = 18; # starts at 500
+# above 2km the delta spacing changes (impact RWP)
+####################################################
+BARBrwp_x_base = 1; # one-hour offset start
+BARBrwp_x = 1; # one-hour delta
+BARBrwp_x_ext = 3; # three-hour delta
+
+BARBrwp_y_Lbase = 18; # start at 500 m 
+BARBrwp_y_Hbase = 7; # start at 2 km
+######################################
+#BARBrwp_Ly = 28; #plot every 600 m
+#BARBrwp_Hy = 11; #plot every 850 m
+BARBrwp_Ly = 1; #plot every barb
+BARBrwp_Hy = 1; #plot every barb
+# model information dictated by measurement levels
+"""############################################################################
+Colorbar Padding
+############################################################################"""
+Cbar_pad = 0.01;
+"""############################################################################
+Line width/marker size
+############################################################################"""
+PLTlwidth=1.1   # line width
+PLTmsize=3.0   # marker size
+PLTmewidth=.5   # marker edge width
+PLTccolor='black'   # contour color
+PLTmfcolor='white'   # marker face color
+PLTmfcolor_miss='grey'   # marker face color missing/unknown/default data
+PLTmecolor='black'   # marker edge color
+PLTclsize=5.0  # contour label size
+PLTcwidth=0.75  # contour label size
+"""############################################################################
+NOAA Logo
+############################################################################"""
+LOGOaxcoords=[0.925, 0.025, 0.05, 0.05]
+metLOGOaxcoords=[0.955, 0.005, 0.05, 0.05]
+NOAAlogo=os.path.join(os.path.dirname(__file__),'noaa_logo.gif')
+

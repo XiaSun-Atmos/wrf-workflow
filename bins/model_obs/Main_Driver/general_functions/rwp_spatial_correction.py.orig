@@ -1,0 +1,72 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+The Purpose of this Code is to Correct the Spatial Tuple Arrays that were 
+Created
+- To Develop an Equally Spaced Meshgrid
+
+###############################################################################
+Created on Thu Aug  6 09:51:34 2020
+@author: jamesduncan1
+"""
+
+import numpy as np
+
+def rwp_sptl_correct(TIMEmesh,HGTmesh,ATMOmesh):
+    """ Identify Proper Meshgrid Spacing
+    ####################################################################### """
+    TIMEarr = TIMEmesh[0,:];
+    print('TIMEarr',TIMEarr)
+    ############################################
+    tdiff = np.diff(TIMEarr);
+    print(tdiff)
+    # denote the desired time step
+    tstep_oi = np.nanmedian(tdiff);
+    print('tstep_oi',tstep_oi)
+    
+    """ Extract Height and Time Information 
+    ####################################################################### """
+    HGTarr_oi = HGTmesh[:,0]
+    ###########################################################################
+    # To Mitigate Erroneous Time Steps -- Insert Dumby Time Between Large Steps
+    t2corr = np.where(tdiff > 1.25*tstep_oi)[0]
+    print('t2corr',t2corr)
+    ###########################################################################
+    if len(t2corr) > 0:
+        ##############################
+        # Initiate Array #
+        MINtime = TIMEarr[0]; MAXtime = TIMEarr[-1];
+        TMEarr_oi = np.arange(MINtime,MAXtime+0.1,tstep_oi)
+        print('TMEarr_oi',TMEarr_oi)
+        print('MAXtime',MAXtime,', TMEarr_oi',TMEarr_oi[-1])
+        ################################################
+        # Ensure Proper Time Step #
+        if TMEarr_oi[-1] != MAXtime:
+            print('Time Mismatch in Spatial Meshgrid Correction')
+            return;
+        
+        """ Reconstruct Meshgrid Arrays
+        ################################################################### """
+        TIMEmesh_oi, HGTmesh_oi = np.meshgrid(TMEarr_oi,HGTarr_oi);
+        ATMOmesh_oi = np.ones(TIMEmesh_oi.shape)*np.nan;
+        
+        for j in range(0,len(HGTarr_oi)):
+            for i in range(0,len(TMEarr_oi)):
+                # Identify Relevant Time Indice from Input Array #
+                INDoi = np.where(abs(TMEarr_oi[i] - TIMEarr) < 1e-5)[0];
+                if len(INDoi) == 1:
+                    # Properly Fill Measurement Grid
+                    ATMOmesh_oi[:,i] = ATMOmesh[:,INDoi[0]]
+                    # time indice is all that is needed
+                ###############################################################
+                del INDoi
+    else:
+        # No Need to Reconstruct Meshgrid Array -- Simply Return Input #
+        #######################################################################
+        TIMEmesh_oi = TIMEmesh;
+        HGTmesh_oi = HGTmesh;
+        ATMOmesh_oi = ATMOmesh;
+
+    """ Return Relevant Data Arrays
+    ####################################################################### """
+    return TIMEmesh_oi, HGTmesh_oi, ATMOmesh_oi

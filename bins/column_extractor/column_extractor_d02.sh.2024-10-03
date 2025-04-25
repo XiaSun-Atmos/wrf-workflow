@@ -1,0 +1,14 @@
+#!/bin/bash
+
+export column_out="/mnt/lfs5/BMC/rtwbl/Xia.Sun/wfip3_cases/outputs/column_out"
+export upp_out="/mnt/lfs5/BMC/rtwbl/Xia.Sun/wfip3_cases/outputs/upp_out"
+export column_extract="/lfs5/BMC/rtwbl/WFIP3/workflow/bins/column-extractor-main"
+export SINGULARITYENV_APPEND_PATH="/opt/conda/bin:${column_extract}"
+export SINGULARITY_BIND="${upp_out}:/upp_out,${column_out}/${YYYY}${MM}${DD}${HH}/d02:/data"
+mkdir ${column_out}/${YYYY}${MM}${DD}${HH}
+mkdir ${column_out}/${YYYY}${MM}${DD}${HH}/d02
+mkdir ${column_out}/${YYYY}${MM}${DD}${HH}/d02/input
+mkdir ${column_out}/${YYYY}${MM}${DD}${HH}/d02/output
+
+cd ${column_extract}
+singularity exec -H ${column_extract} ${column_extract}/column_extractor_latest.sif ${column_extract}/sing_column_extractor_d02.sh
